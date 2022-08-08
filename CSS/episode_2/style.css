@@ -1,0 +1,25 @@
+div {
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.container-red {
+    height: 100px;
+    width: 300px;
+    border: 3px solid red;
+}
+
+.container-blue {
+    height: 100px;
+    width: 300px;
+    border: 3px solid blue;
+}
+
+.footer {
+    color: red;
+}
