@@ -1,0 +1,42 @@
+/*
+Media types
+all, print, screen
+*/
+
+/*
+Media features
+any-hover, any-pointer, aspect-ratio, 
+color, color-gamut, color-index, device-aspect-ratio Deprecated, 
+device-height Deprecated, device-width Deprecated, display-mode, 
+dynamic-range, forced-colors, grid, height, hover, inverted-colors, 
+monochrome, orientation, overflow-block, overflow-inline, 
+pointer, prefers-color-scheme, prefers-contrast, prefers-reduced-motion, 
+resolution, scripting, update, video-dynamic-range, width
+*/
+
+/*
+Logische Operatoren
+not, and und only
+*/
+
+
+/* Smartphone */
+@media only screen and (max-width: 600px) {
+    article {
+        width: initial;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) {
+    article {
+        width: 75%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+    article {
+        width: 50%;
+    }
+}

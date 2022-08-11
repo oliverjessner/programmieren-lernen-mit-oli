@@ -1,0 +1,106 @@
+html, 
+body {
+    height: 100%;
+}
+
+html, 
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer,
+nav {
+    height: 18.5px;
+    padding: 15px;
+}
+
+article {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    overflow: hidden;
+}
+
+article img {
+    float: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+.badge {
+    font-size: 12px;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+
+.badge-animal {
+    border: 1px solid brown;
+    background-color: brown;
+}  
+
+.badge-funny {
+    border: 1px solid aqua;
+    background-color: aqua;
+}   
+
+.badge-fluffy {
+    border: 1px solid green;
+    background-color: green;
+}
+
+.badge-sport {
+    border: 1px solid royalblue;
+    background-color: royalblue;
+}
+
+.badge-austria {
+    border: 1px solid red;
+    background-color: red;
+}
+
+.badge-tech {
+    border: 1px solid violet;
+    background-color: violet;
+}
+
+.badge-panorama {
+    border: 1px solid yellow;
+    background-color: yellow;
+}
+
+.navi-element {
+    color: blue;
+}
+
+/* Pseudo Klasse */
+.navi-element:hover {
+    color: red;
+    cursor: pointer;
+}
+
+article:first-child {
+    margin-top: 0;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+article p::first-letter {
+    font-size: 20px;
+}
+
+.rating {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
