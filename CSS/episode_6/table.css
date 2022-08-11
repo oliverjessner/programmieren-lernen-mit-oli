@@ -1,0 +1,29 @@
+/*
+table
+table-caption
+table-cell
+table-column
+table-column-group
+table-footer-group
+table-header-group
+table-row
+table-row-group
+*/
+.table { 
+    display: table;
+    border-spacing: 0.5em;
+ }
+
+.table-row {
+    display: table-row; 
+}
+
+.table-cell {
+    display: table-cell; 
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.table-header {
+    display: table-header-group;
+}

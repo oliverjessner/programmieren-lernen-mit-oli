@@ -22,6 +22,11 @@ article {
     width: 50%;
     margin: 20px auto;
     padding: 15px;
+    overflow: hidden;
+}
+
+article img {
+    float: right;
 }
 
 h1 {
@@ -92,4 +97,10 @@ article:last-child {
 
 article p::first-letter {
     font-size: 20px;
+}
+
+.rating {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
 }

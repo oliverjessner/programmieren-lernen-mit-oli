@@ -1,0 +1,37 @@
+.container {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.absolute {
+    background-color: red;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+}
+
+.absolute2 {
+    background-color: darksalmon;
+    z-index: 0;
+}
+
+.relative {
+    background-color: blue;
+    position: relative;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+}
+
+.fixed {
+    background-color: green;
+    position: fixed;
+}
+
+.static {
+    background-color:  darkorange;
+    position: static;
+}
