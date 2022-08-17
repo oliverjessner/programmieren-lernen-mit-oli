@@ -15,7 +15,7 @@ Anforderungen: Keine
 
 ## CSS
 
-Dauer: 40min\
+Dauer: 2h 15min\
 Geignet für: Anfänger\
 Anforderungen: HTML
 
