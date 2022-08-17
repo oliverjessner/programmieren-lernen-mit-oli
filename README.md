@@ -1,4 +1,22 @@
 # programmieren-lernen-mit-oli
-Hier befinden sich alle Files der verschiedenen Episoden.
+Hier befinden sich alle Dateien der verschiedenen Episoden.
 
-https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04w
+## YouTube Channel 
+
+Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04w)
+
+## HTML 
+
+Dauer: 40min
+Geignet für: Anfänger 
+Anforderungen: Keine
+
+[Playlist](https://www.youtube.com/watch?v=RT41ih6MXcQ&list=PLFSTTwVw-c1EUaZNNbSiH5KP_t3ERX9j7)
+
+## CSS
+
+Dauer: 40min
+Geignet für: Anfänger 
+Anforderungen: HTML
+
+[Playlist](https://www.youtube.com/watch?v=cm1ZDfnbRjA&list=PLFSTTwVw-c1F5K0eBA0C55fYpJrE80LYi&index=1)
