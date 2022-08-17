@@ -1,0 +1,35 @@
+html, 
+body {
+    height: 100%
+}
+
+html, 
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+    height: 500px;
+}
+
+.flex-item {
+    height: 80px;
+    background-color: #b6b6b6;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.flex-item:first-child {
+    flex-grow: 2;
+}
+
+.flex-item:last-child {
+}

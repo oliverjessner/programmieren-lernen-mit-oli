@@ -1,0 +1,26 @@
+html, 
+body {
+    height: 100%
+}
+
+html, 
+body,
+p,
+div {
+    margin: 0;
+    padding: 0;
+    font-size: calc(var(--padding) + 3px);
+}
+
+.container {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+.inner-container {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+}
