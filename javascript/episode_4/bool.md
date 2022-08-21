@@ -4,7 +4,8 @@ Es gibt zwei Werte Wahr (true) und Falsch (false)!
 ### Der Negations-Operator (Junktor) (negation operator) !
 
 
-| Eingang 1 | Ausgang | 
+
+| Eingang 1 | Ausgang |
 | --------- | ------- |
 | false     | true    |
 | true      | false   |
