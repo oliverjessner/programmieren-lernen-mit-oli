@@ -3,10 +3,10 @@ Es gibt zwei Werte Wahr (true) und Falsch (false)!
 
 ## Der Negations-Operator (Junktor) (negation operator) !
 
-Eingang 1 | Ausgang | 
-----------|---------|
-false     | true    |
-true      | false   |
+|Eingang 1 | Ausgang | 
+|----------|---------|
+|false     | true    |
+|true      | false   |
 
 ## Der Und-Operator (and operator) &&
 
