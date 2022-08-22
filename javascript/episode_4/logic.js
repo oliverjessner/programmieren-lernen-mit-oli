@@ -1,6 +1,10 @@
-const smartphone = 'Samsung';
-const storage = 256; //GB
+const cat = 'fiona';
+const food = 'pizza'; 
+const human = 'berni'; 
+const itsAPizza = food === 'pizza';
+const nameIsOli = human === 'oli';
+const catNameIsFiona = cat === 'fiona';
 
-if (smartphone === 'iPhone' ^ storage > 128) {
-    console.log('its the phone we want');
+if (catNameIsFiona && nameIsOli || itsAPizza) {
+    console.log('Its oli');
 }
