@@ -1,10 +1,23 @@
-const temps = [32.5, 31, 34, 29.4];
-const temps2 = [35, 29, 24, 30.4];
-const ftemps = temps.filter(function (temp) {
-    return temp > 30;
-}).map(function mapFunction (temp) {
-    return temp * 1.8 + 32 + ' °F';
+const persons = [];
+
+function createPersonObj (name, lastname) {
+    return {
+        name,
+        lastname,
+        fullName: name + ' ' + lastname
+    };
+}
+
+const oli = createPersonObj('Oliver', 'Jessner');
+const berni = createPersonObj('Berni', 'Mayer');
+
+persons.push(oli);
+persons.push(berni);
+
+console.log(persons);
+
+const find = persons.find(function (person) {
+    return person.name === 'Oliver';
 });
 
-console.log(ftemps);
-
+console.log(find);
