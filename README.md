@@ -28,3 +28,12 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 🔧 Anforderungen: HTML, CSS
 
 [YouTube Playlist](https://youtube.com/playlist?list=PLFSTTwVw-c1GD-CNWVRHPy6L7OxpkjYxA)
+
+## Schritt für Schritt Projekte
+
+### Projekt 1 - temperatur converter
+
+🕐 Dauer: ?\
+😀 Geignet für: Anfänger\
+🔧 Anforderungen: HTML, CSS, JS (EP13)
+
