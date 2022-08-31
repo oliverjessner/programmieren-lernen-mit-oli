@@ -1,0 +1,102 @@
+:root {
+    --background-color: #202124;
+    --hover-bgcolor: #090d1a;
+    --secondary-bgcolor: #3c4043;
+    --font-color: #FFF;
+    --equals-color: #787878; 
+    --border-color: rgb(101, 101, 101);
+
+    --border-radius: 20px;
+    --font-size: 16px;
+    --big-font-size: 24px;
+}
+
+html,
+body,
+main, 
+h2, 
+select, 
+input {
+    margin: 0;
+    padding: 0; 
+    color: var(--font-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+html,
+body {
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+body {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: grid; 
+    grid-template-areas: 
+        "headline headline headline"
+        "select select select"
+        "from equals to";
+    padding: 30px;
+    gap: 15px;
+    border: 1px solid var(--border-color); 
+    border-radius: var(--border-radius);
+}
+
+h2 {
+    grid-area: headline;
+}
+
+input,
+select {
+    padding: 10px 5px;
+}
+
+select {
+    background-color: var(--secondary-bgcolor);
+    appearance: none;
+}
+
+input {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    background-color: var(--background-color);
+    font-size: var(--big-font-size);
+}
+
+.type-select {
+    grid-area: select;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-from {
+    grid-area: from;
+}
+
+.container-to {
+    grid-area: to;
+}
+
+.type-select {
+    font-size: calc(var(--font-size) + 4px);
+}
+
+.big-equals {
+    grid-area: equals;
+    font-size: calc(var(--big-font-size) * 2);
+    text-align: center;
+    color: var(--equals-color);
+}
+
+select:hover {
+    background-color: var(--hover-bgcolor);
+    cursor: pointer;
+}
