@@ -33,7 +33,8 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ### Projekt 1 - temperatur converter
 
-🕐 Dauer: ?\
+🕐 Dauer: 1h\
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML, CSS, JS (EP13)
 
+[YouTube Playlist](https://www.youtube.com/watch?v=eDHtMl55hy0&list=PLFSTTwVw-c1G8VgF-0SOElg9n9KAyFh3U)

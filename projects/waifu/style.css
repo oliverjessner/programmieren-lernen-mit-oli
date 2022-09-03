@@ -1,0 +1,7 @@
+:root {
+    --spanisch-pink: #F4B9B2;
+}
+
+html {
+    background-color: var(--spanisch-pink);
+}
