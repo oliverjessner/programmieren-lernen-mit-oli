@@ -1,0 +1,30 @@
+button,
+select {
+    display: inline-block;
+    font-size: 1em;
+    padding: 15px 30px;
+    text-align: center;
+    appearance: none;
+    background-color: var(--hot-pink);
+    color: #fff;
+    border-radius: 5px;
+    border: none; 
+    cursor: pointer;
+    box-shadow: 0 2px 25px var(--hot-pink-hover);
+}
+
+button:hover,
+select:hover {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hot-pink-hover);
+    }
+}
+
+.deactivated {
+    background-color: rgb(100, 98, 98);
+}

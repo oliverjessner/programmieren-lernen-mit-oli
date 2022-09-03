@@ -1,14 +1,17 @@
 {
   "name": "waifu",
   "version": "1.0.0",
-  "description": "",
+  "description": "please dont do it",
   "main": "logic.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "not oliver jessner",
+  "license": "MIT ",
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "keywords": [
+    "waifu"
+  ]
 }
