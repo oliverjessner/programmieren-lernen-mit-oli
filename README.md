@@ -38,3 +38,11 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 🔧 Anforderungen: HTML, CSS, JS (EP13)
 
 [YouTube Playlist](https://www.youtube.com/watch?v=eDHtMl55hy0&list=PLFSTTwVw-c1G8VgF-0SOElg9n9KAyFh3U)
+
+### Project 2 - Waifu
+
+🕐 Dauer: 20min\
+😀 Geignet für: Fortgeschrittene Anfänger\
+🔧 Anforderungen: HTML, CSS, JS (EP?), Node (EP?)
+
+[YouTube Playlist](https://www.youtube.com/watch?v=eDHtMl55hy0&list=PLFSTTwVw-c1G8VgF-0SOElg9n9KAyFh3U)
