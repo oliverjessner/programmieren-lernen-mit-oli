@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .stack {
+                border: 2px solid black;
+                border-top: none;
+                height: 700px;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+            .frame {
+                background-color: blue;
+                margin: 5px;
+                padding: 10px;
+                color: white;
+                text-align: center;
+                font-size: 32px;
+            }
+        </style>
+        <title>Episode 14: CallStack</title>
+    </head>
+    <body>
+        <h2>Stack</h2>
+        <div class="stack">
+            <!-- <div class="frame">third</div>
+            <div class="frame">second</div> --> 
+            <div class="frame">first</div>
+            <div class="frame">main</div>
+        </div>
+        <script src="logic.js"></script>
+    </body>
+</html>
