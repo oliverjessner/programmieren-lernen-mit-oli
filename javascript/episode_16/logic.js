@@ -1,19 +1,20 @@
 'use strict';
-const human = {
-    speed: 10,
-    language: 'german',
-    armor: {
-        type: 'metal'
+const car = {
+    color: 'blue',
+    brand: 'tesla',
+    model: 'x',
+    battery: '100 kwh',
+    related: {
+        model: 'S',
     }
 };
-const horse = {
-    speed: 20,
-    color: 'brown'
+const cloneCar = {
+    ...car,
+    color: 'red',
+    related: {
+        model: 3
+    }
 };
-//const refObj = Object.assign(human, horse);
-Object.assign(horse, human);
 
-human.armor.type = 'wood';
-
-console.log(human);
-console.log(horse);
+console.log(cloneCar);
+console.log(car);
