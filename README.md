@@ -23,7 +23,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## JavaScript
 
-🕐 Dauer: ?\
+🕐 Dauer: 3h+
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML, CSS
 
@@ -39,7 +39,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 [YouTube Playlist](https://www.youtube.com/watch?v=eDHtMl55hy0&list=PLFSTTwVw-c1G8VgF-0SOElg9n9KAyFh3U)
 
-### Project 2 - Waifu
+### Project 2 - Waifu API in einer App
 
 🕐 Dauer: 20min\
 😀 Geignet für: Fortgeschrittene Anfänger\
