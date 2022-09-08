@@ -15,7 +15,7 @@ const car = {
     },
     getAllOwners () {
         const self = this; 
-
+        
         this.owners.forEach(function (owner) {
             console.log(self.brand, owner);
         });
