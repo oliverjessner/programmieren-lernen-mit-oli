@@ -1,16 +1,5 @@
 'use strict';
-const direction = 'goBack';
-const directions = Object.freeze({
-    goLeft,
-    goRight,
-    goUp,
-    goDown,
-    [direction]: unknowFn
-});
-
-function unknowFn () {
-    console.log('dynamic'); 
-}
+const direction = 'goLeft';
 
 function goLeft () {
     console.log('go left');
@@ -28,4 +17,15 @@ function goDown () {
     console.log('go down');
 }
 
-directions[direction]();
+if (direction === 'goLeft') {
+    goLeft();
+}
+if (direction === 'goRight') {
+    goRight();
+}
+if (direction === 'goUp') {
+    goUp();
+}
+if (direction === 'goDown') {
+    goDown();
+}
