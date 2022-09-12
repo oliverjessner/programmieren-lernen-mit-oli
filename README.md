@@ -23,7 +23,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## JavaScript
 
-🕐 Dauer: 3h+
+🕐 Dauer: 4h+
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML, CSS
 
@@ -43,6 +43,14 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 🕐 Dauer: 20min\
 😀 Geignet für: Fortgeschrittene Anfänger\
-🔧 Anforderungen: HTML, CSS, JS (EP?), Node (EP?)
+🔧 Anforderungen: HTML, CSS, JS (EP24), Node (EP?)
 
 [YouTube Playlist](https://www.youtube.com/watch?v=eDHtMl55hy0&list=PLFSTTwVw-c1G8VgF-0SOElg9n9KAyFh3U)
+
+### Project 3 - Weather App
+
+🕐 Dauer: ?min\
+😀 Geignet für: Fortgeschrittene Anfänger\
+🔧 Anforderungen: HTML, CSS, JS (EP24)
+
+[YouTube Playlist](https://www.youtube.com/watch?v=eDHtMl55hy0&list=PLFSTTwVw-c1G8VgF-0SOElg9n9KAyFh3U )
