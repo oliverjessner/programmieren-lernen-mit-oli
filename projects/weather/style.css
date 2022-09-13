@@ -1,0 +1,86 @@
+:root {
+    --background-color: rgb(20, 17, 17);
+    --font-color: #fff;
+
+    --border-radius: 25px;
+    --small-padding: 15px;
+    --big-padding: 20px;
+}
+
+html,
+body,
+main,
+input,
+p,
+hr {
+    font-size: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--font-color);
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--small-padding);
+}
+
+hr {
+    opacity: 0.4;
+    margin: var(--small-padding) 0;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    width: calc(100vw - 30px);
+    font-size: 1.25em;
+}
+
+.weather-container {
+    margin: var(--small-padding);
+    padding: var(--big-padding);
+    border-radius: var(--border-radius);
+    max-width: 440px;
+    width: calc(100vw - var(--small-padding) * 2 - var(--big-padding) * 2);
+    background-image: linear-gradient(to left top, #305c59, #2a6065, #276371, #2c667d, #396788, #3b7197, #3d7ca6, #3f87b5, #17a0ca, #00b9d7, #00d1dc, #00e9da);
+}
+
+.search-weather-container {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--big-padding) / 2)
+}
+
+.forecast-weather-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    font-size: 1.15em;
+}
+
+.current-weather-temp {
+    font-size: 3em;
+}
+
+.current-weather-title {
+    font-size: 2em;
+}
+
+.current-weather-location, 
+.current-weather-date {
+    font-size: 1em;
+}
+
+.current-weather-location {
+    margin-bottom: var(--small-padding);
+}
+
+
+    
+ 
