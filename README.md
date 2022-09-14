@@ -49,7 +49,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ### Project 3 - Weather App
 
-🕐 Dauer: ?min\
+🕐 Dauer: 43min\
 😀 Geignet für: Fortgeschrittene Anfänger\
 🔧 Anforderungen: HTML, CSS, JS (EP24)
 
