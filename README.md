@@ -29,6 +29,14 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 [YouTube Playlist](https://youtube.com/playlist?list=PLFSTTwVw-c1GD-CNWVRHPy6L7OxpkjYxA)
 
+## NodeJS
+
+🕐 Dauer: ?
+😀 Geignet für: Anfänger\
+🔧 Anforderungen: HTML, CSS, JavaScript
+
+[YouTube Playlist](https://www.youtube.com/playlist?list=PLFSTTwVw-c1GdSaq9yp9jjlo55IJZ4Oq7)
+
 ## Schritt für Schritt Projekte
 
 ### Projekt 1 - temperatur converter
@@ -43,7 +51,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 🕐 Dauer: 20min\
 😀 Geignet für: Fortgeschrittene Anfänger\
-🔧 Anforderungen: HTML, CSS, JS (EP24), Node (EP?)
+🔧 Anforderungen: HTML, CSS, JS (EP25), Node (EP6)
 
 [YouTube Playlist](https://www.youtube.com/watch?v=eDHtMl55hy0&list=PLFSTTwVw-c1G8VgF-0SOElg9n9KAyFh3U)
 

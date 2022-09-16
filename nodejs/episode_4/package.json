@@ -1,0 +1,21 @@
+{
+  "name": "episode_4",
+  "version": "1.0.0",
+  "description": "testing for npm stuff ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "keywords": [
+    "testing",
+    "npm"
+  ],
+  "author": "oliver jessner",
+  "license": "MIT ",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1"
+  }
+}
