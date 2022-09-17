@@ -31,7 +31,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## NodeJS
 
-🕐 Dauer: ?
+🕐 Dauer: 30min+
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML, CSS, JavaScript
 
