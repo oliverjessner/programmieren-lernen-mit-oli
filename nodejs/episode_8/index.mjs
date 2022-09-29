@@ -16,7 +16,6 @@ client.on('messageCreate', async function (message) {
         return;
     }
     
-
     const response = await fetch(url, {
         method: 'GET'
     });
