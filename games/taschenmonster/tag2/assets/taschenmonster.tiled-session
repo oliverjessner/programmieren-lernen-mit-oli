@@ -1,0 +1,89 @@
+{
+    "activeFile": "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/map/starting_town.tmx",
+    "expandedProjectPaths": [
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/map",
+        "tilesets",
+        "map",
+        ".",
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets"
+    ],
+    "exportAsImage.useCurrentScale": true,
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/map/starting_town.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 362.72727272727275,
+                "y": 190.72727272727275
+            }
+        },
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/tilesets/Nature Autumn.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/tilesets/Nature Summer.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/tilesets/Serene_Village_16x16.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/tilesets/collisonblock.tsx": {
+            "scaleInDock": 1
+        },
+        "map/starting_town.tmx": {
+            "scale": 8,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 239.9375,
+                "y": 255.1875
+            }
+        },
+        "tilesets/Nature Autumn.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesets/Nature Ice.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesets/Nature Summer.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "tilesets/Serene_Village_16x16.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "tilesets/collisonblock.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/map/raw",
+    "last.imagePath": "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag2/assets/tilesets/raw",
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "openFiles": [
+        "map/starting_town.tmx",
+        "tilesets/Serene_Village_16x16.tsx",
+        "tilesets/Nature Summer.tsx",
+        "tilesets/Nature Ice.tsx",
+        "tilesets/Nature Autumn.tsx",
+        "tilesets/collisonblock.tsx",
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/map/starting_town.tmx"
+    ],
+    "project": "taschenmonster.tiled-project",
+    "recentFiles": [
+        "map/starting_town.tmx",
+        "tilesets/Serene_Village_16x16.tsx",
+        "tilesets/Nature Summer.tsx",
+        "tilesets/Nature Ice.tsx",
+        "tilesets/Nature Autumn.tsx",
+        "tilesets/collisonblock.tsx",
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag4/src/game/assets/map/starting_town.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

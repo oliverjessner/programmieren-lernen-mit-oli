@@ -1,0 +1,12 @@
+{
+    "automappingRulesFile": "",
+    "commands": [
+    ],
+    "extensionsPath": "extensions",
+    "folders": [
+        ".",
+        "../../tag4/src/game/assets"
+    ],
+    "propertyTypes": [
+    ]
+}
