@@ -13,7 +13,7 @@ export default class Scene extends Sprite {
     }
 
     whereAmI () {
-        const x = Math.abs(this.position.x - 560);
+        const x = Math.abs(this.position.x - 480);
         const y = Math.abs(this.position.y - 640);
 
         return {
@@ -24,28 +24,28 @@ export default class Scene extends Sprite {
     
     #isLeftSideFree () {
         const { x, y } = this.whereAmI();
-        const isRightOfBody = this.collision.data[y][x - 2];
+        const isRightOfBody = this.collision.data[y][x - 1];
         
         return isRightOfBody !== this.#collisonBlockNumber;
     }
 
     #isRightSideFree () {
         const { x, y } = this.whereAmI();
-        const isLeftOfBody = this.collision.data[y][x];
+        const isLeftOfBody = this.collision.data[y][x + 1];
         
         return isLeftOfBody !== this.#collisonBlockNumber;
     }
 
     #isTopSideFree () {
         const { x, y } = this.whereAmI();
-        const isTopOfHead = this.collision.data[y - 1][x - 1];
+        const isTopOfHead = this.collision.data[y - 1][x];
         
         return isTopOfHead !== this.#collisonBlockNumber;
     }
 
     #isBottomSideFree () {
         const { x, y } = this.whereAmI();
-        const isTopOfHead = this.collision.data[y + 1][x - 1];
+        const isTopOfHead = this.collision.data[y + 1][x];
         
         return isTopOfHead !== this.#collisonBlockNumber;
     }
