@@ -53,11 +53,9 @@ export default class Scene extends Sprite {
 
     #isEnteringBuilding () {
         const { x, y } = this.whereAmI();
-        const isHouseAbove = this.houses.data[y - 2][x - 1];
-        const isHouseAbove2 = this.houses.data[y][x - 1];
+        const isHouseAbove = this.houses.data[y][x];
         
-        return blocks.blueDoor === isHouseAbove || blocks.redDoor === isHouseAbove ||
-               blocks.blueDoor === isHouseAbove2 || blocks.redDoor === isHouseAbove2
+        return blocks.blueDoor === isHouseAbove || blocks.redDoor === isHouseAbove;    
     }
 
     draw (direction) {

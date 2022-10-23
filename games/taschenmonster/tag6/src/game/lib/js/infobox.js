@@ -1,6 +1,6 @@
 export default class InfoBox {
     #margin = 25;
-    #fontSize = 32;
+    #fontSize = 48;
     #black = '#000000';
     
     constructor ({ ctx, tileSize }) {
@@ -24,7 +24,7 @@ export default class InfoBox {
         const width = textSize.width + this.#margin * 2;
         const height = this.#margin + this.#fontSize * lines;
         const startX = (window.innerWidth - width) / 2;
-        const startY = window.innerHeight - height  - this.#margin;
+        const startY = window.innerHeight - height - this.#margin;
 
         this.ctx.beginPath();
 
@@ -44,7 +44,7 @@ export default class InfoBox {
 
         this.#drawCircle(startX , startY);
         this.#drawCircle(startX + width, startY);
-        this.#drawCircle(startX , startY + height);
-        this.#drawCircle(startX  + width, startY + height);
+        this.#drawCircle(startX, startY + height);
+        this.#drawCircle(startX + width, startY + height);
     }
 }
