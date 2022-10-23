@@ -1,7 +1,7 @@
 export default class InfoBox {
     #margin = 25;
     #fontSize = 32;
-    #lightBrown = 'rgb(112, 77, 43)';
+    #black = '#000000';
     
     constructor ({ ctx, tileSize }) {
         this.ctx = ctx;
@@ -11,11 +11,12 @@ export default class InfoBox {
 
     #drawCircle (x, y) {
         this.ctx.beginPath();
-        this.ctx.fillStyle = this.#lightBrown;
+        this.ctx.fillStyle = this.#black;
 
         this.ctx.arc(x, y, 5, 0, Math.PI * 2);
         this.ctx.fill();
         this.ctx.stroke();
+        this.ctx.beginPath();
     }
 
     draw (text, lines = 1) {        
@@ -28,7 +29,7 @@ export default class InfoBox {
         this.ctx.beginPath();
 
         this.ctx.lineWidth = '3';
-        this.ctx.strokeStyle = this.#lightBrown; 
+        this.ctx.strokeStyle = this.#black; 
         this.ctx.fillStyle = '#d3d3d3';
 
         this.ctx.rect(startX , startY, width, height);
