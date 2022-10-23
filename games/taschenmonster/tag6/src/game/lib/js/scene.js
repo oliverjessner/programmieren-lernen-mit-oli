@@ -1,22 +1,15 @@
 import Sprite from './sprite.js';
-
-const upKey = 'w';
-const downKey = 's';
-const leftKey = 'a';
-const rightKey = 'd';
+import { rightKey, leftKey, upKey, downKey } from '../../data/misc/keys.js';
+import blocks from '../../data/misc/blocks.js';
 
 export default class Scene extends Sprite {
-    #collisonBlockNumber = 2116;
-    #redDoor = 1724;
-    #blueDoor = 2033;
-    #lasDirection = '';
+    #lastDirection = downKey;
     tileSize = 80; 
 
     constructor (config, ctx) {
         super(config, ctx);
         this.collision = this.mapData.layers.find(l => l.name === 'collionsblock');
-        this.houses = this.mapData.layers.find(l => l.name === 'Houses');
-        this.interactable = this.mapData.layers.find(l => l.name === 'interactable');
+        this.houses = this.mapData.layers.find(l => l.name === 'houses');
     }
 
     whereAmI () {
@@ -25,7 +18,8 @@ export default class Scene extends Sprite {
 
         return {
             x: x / this.tileSize,
-            y: y / this.tileSize
+            y: y / this.tileSize,
+            direction: this.#lastDirection
         };
     }
     
@@ -33,28 +27,28 @@ export default class Scene extends Sprite {
         const { x, y } = this.whereAmI();
         const isLeftOfBody = this.collision.data[y][x - 1];
         
-        return isLeftOfBody !== this.#collisonBlockNumber;
+        return isLeftOfBody !== blocks.collisionBlock;
     }
 
     #isRightSideFree () {
         const { x, y } = this.whereAmI();
         const isRightOfBody = this.collision.data[y][x + 1];
         
-        return isRightOfBody !== this.#collisonBlockNumber;
+        return isRightOfBody !== blocks.collisionBlock;
     }
 
     #isTopSideFree () {
         const { x, y } = this.whereAmI();
         const isTopOfHead = this.collision.data[y - 1][x];
         
-        return isTopOfHead !== this.#collisonBlockNumber;
+        return isTopOfHead !== blocks.collisionBlock;
     }
 
     #isBottomSideFree () {
         const { x, y } = this.whereAmI();
         const isBottomOfHead = this.collision.data[y + 1][x];
         
-        return isBottomOfHead !== this.#collisonBlockNumber;
+        return isBottomOfHead !== blocks.collisionBlock;
     }
 
     #isEnteringBuilding () {
@@ -62,16 +56,14 @@ export default class Scene extends Sprite {
         const isHouseAbove = this.houses.data[y - 2][x - 1];
         const isHouseAbove2 = this.houses.data[y][x - 1];
         
-        return this.#blueDoor === isHouseAbove || this.#redDoor === isHouseAbove ||
-               this.#blueDoor === isHouseAbove2 || this.#redDoor === isHouseAbove2
+        return blocks.blueDoor === isHouseAbove || blocks.redDoor === isHouseAbove ||
+               blocks.blueDoor === isHouseAbove2 || blocks.redDoor === isHouseAbove2
     }
 
     draw (direction) {
         // left
         if (direction === leftKey && this.#isLeftSideFree()) {
-            if (this.#lasDirection !== leftKey) {
-                this.#lasDirection = leftKey;
-            } else {
+            if (this.#lastDirection === leftKey) {
                 this.position.x += this.tileSize;
             }
         }
@@ -80,29 +72,24 @@ export default class Scene extends Sprite {
             if (this.#isEnteringBuilding()) {
                 console.log('is entering building');
             }
-            if (this.#lasDirection !== upKey) {
-                this.#lasDirection = upKey;
-            } else {
+            if (this.#lastDirection === upKey) {
                 this.position.y += this.tileSize;
             }
         }
         // down
         if (direction === downKey && this.#isBottomSideFree()) {
-            if (this.#lasDirection !== downKey) {
-                this.#lasDirection = downKey;
-            } else {
+            if (this.#lastDirection === downKey) {
                 this.position.y -= this.tileSize;
             }
         }
         // right
         if (direction === rightKey  && this.#isRightSideFree()) {
-            if (this.#lasDirection !== rightKey) {
-                this.#lasDirection = rightKey;
-            } else {
+            if (this.#lastDirection === rightKey) {
                 this.position.x -= this.tileSize;
             }
         }
 
+        this.#lastDirection = direction || downKey;
         this.ctx.drawImage(
             this.image, 
             this.position.x, 

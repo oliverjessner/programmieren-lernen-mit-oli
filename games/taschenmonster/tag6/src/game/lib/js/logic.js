@@ -1,4 +1,4 @@
-import Sprite from './sprite.js';
+import Figure from './figure.js';
 import Scene from './scene.js';
 import Route from './route.js';
 import { ctx, renderBlackBackground } from './canvas.js';
@@ -10,7 +10,7 @@ const mapPosition = {
     y: -560,
 };
 const mapData = await loadMapData('alabastia');
-const maggus = new Sprite({
+const maggus = new Figure({
     src: './assets/chars/maggus.png',
     offset: {
         x: 400,
@@ -35,6 +35,13 @@ const collisonBlock = new Scene({
     position: structuredClone(mapPosition),
     mapData
 }, ctx);
+const keyAction = Object.freeze({
+    a: animate,
+    w: animate,
+    s: animate,
+    d: animate,
+    ' ': interact
+});
 
 function animate (direction) {
     renderBlackBackground();
@@ -48,19 +55,16 @@ function animate (direction) {
     foreground.draw(direction);
 }
 
+function interact () {
+    alabastia.interact();
+}
+
 window.addEventListener('keydown', function ({ key }) {
-    if (key === 'a') {
-        return animate(key);
+    if (alabastia.isInteracting) {
+        return;
     }
-    if (key === 'w') {
-        return animate(key);
-    }
-    if (key === 's') {
-        return animate(key);
-    }
-    if (key === 'd') {
-        return animate(key);
-    }
+
+    return keyAction[key]?.(key);
 });
 
 async function bootStrap () {

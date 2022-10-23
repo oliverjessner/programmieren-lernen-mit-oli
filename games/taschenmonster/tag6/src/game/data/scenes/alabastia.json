@@ -295,7 +295,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":32,
          "id":16,
-         "name":"Houses",
+         "name":"houses",
          "opacity":1,
          "type":"tilelayer",
          "visible":false,

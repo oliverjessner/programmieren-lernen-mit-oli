@@ -1,6 +1,7 @@
 const gameSettings = {
     grid: localStorage.getItem('grid') === 'true',
     collisonBlock: localStorage.getItem('collisionBlock') === 'true', 
+    cordinates: localStorage.getItem('cordinates') === 'true',
 };
 const isDevMode = Object.values(gameSettings).some(v => v);
 

@@ -1,9 +1,9 @@
 {
     "activeFile": "map/alabastia.tmx",
     "expandedProjectPaths": [
-        "map",
+        "tilesets",
         ".",
-        "tilesets"
+        "map"
     ],
     "fileStates": {
         "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag2/assets/tilesets/Nature Summer.tsx": {
@@ -11,10 +11,10 @@
         },
         "map/alabastia.tmx": {
             "scale": 2,
-            "selectedLayer": 4,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 233,
-                "y": 230.5
+                "x": 229.5,
+                "y": 227
             }
         },
         "tilesets/Nature Autumn.tsx": {
