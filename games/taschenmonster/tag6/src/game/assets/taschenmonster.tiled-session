@@ -1,9 +1,9 @@
 {
     "activeFile": "map/alabastia.tmx",
     "expandedProjectPaths": [
-        "tilesets",
         "map",
-        "."
+        ".",
+        "tilesets"
     ],
     "exportAsImage.useCurrentScale": true,
     "fileStates": {
@@ -12,10 +12,10 @@
         },
         "map/alabastia.tmx": {
             "scale": 5,
-            "selectedLayer": 0,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 204,
-                "y": 357.8
+                "x": 202.4,
+                "y": 356.20000000000005
             }
         },
         "tilesets/Nature Autumn.tsx": {
