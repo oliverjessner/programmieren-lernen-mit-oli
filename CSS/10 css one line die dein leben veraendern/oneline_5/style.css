@@ -1,0 +1,16 @@
+html, body {
+	margin: 0;
+	overflow: hidden;
+}
+
+img {
+	width: 100vw;
+}
+
+p {
+	position: absolute;
+	font-size: 90px;
+    top: calc(50% - 90px);
+    left: calc(50% - 300px);
+	mix-blend-mode: overlay;
+}

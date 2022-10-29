@@ -1,0 +1,5 @@
+.container {
+	background-color: aqua;
+	width: 300px;
+	aspect-ratio: 16 / 9;
+}

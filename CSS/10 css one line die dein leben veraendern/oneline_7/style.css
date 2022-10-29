@@ -1,0 +1,9 @@
+html, body {
+	margin: 0;
+	overflow: hidden;
+}
+
+img {
+	width: 100vw;
+	transform: scaleY(-1);
+}

@@ -1,0 +1,4 @@
+p:first-of-type::first-letter {
+	font-size: 44px;
+	color: red;
+}

@@ -1,0 +1,21 @@
+html, body {
+	margin: 0;
+	overflow: hidden;
+}
+
+div {
+	width: 400px;
+	aspect-ratio: 16/9;
+	overflow: auto;
+	resize: both;
+}
+
+textarea {
+	margin: 15px;
+	height: 500px;
+	aspect-ratio: 1;
+}
+
+video {
+	width: inherit;
+}

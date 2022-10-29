@@ -1,0 +1,8 @@
+body {
+	counter-reset: headings 1;
+}
+
+h2::before {
+	counter-increment: headings;
+	content: counter(headings) ". ";
+}

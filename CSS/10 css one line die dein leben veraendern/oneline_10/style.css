@@ -1,0 +1,16 @@
+html, body {
+	margin: 0;
+	overflow: hidden;
+}
+
+img {
+	width: 200px;
+}
+
+.circle {
+	clip-path: circle(60px at center);
+}
+
+.polygon {
+	clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
