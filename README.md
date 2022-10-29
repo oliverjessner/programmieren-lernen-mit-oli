@@ -1,5 +1,6 @@
 # programmieren-lernen-mit-oli
-Hier befinden sich alle Dateien der verschiedenen Episoden.
+Hier befinden sich alle Dateien der verschiedenen Episoden meines
+YouTube Kanals.
 
 ## YouTube Channel 
 
@@ -23,7 +24,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## JavaScript
 
-🕐 Dauer: 4h+
+🕐 Dauer: 4.5h+\
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML, CSS
 
@@ -31,11 +32,18 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## NodeJS
 
-🕐 Dauer: 30min+
+🕐 Dauer: 45min+\
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML, CSS, JavaScript
 
 [YouTube Playlist](https://www.youtube.com/playlist?list=PLFSTTwVw-c1GdSaq9yp9jjlo55IJZ4Oq7)
+
+## Taschenmonster
+🕐 Dauer: 1h 35min+
+😀 Geignet für: Fortgeschrittene\
+🔧 Anforderungen: HTML, CSS, JavaScript, NodeJS, Tiled
+
+[YouTube Playlist](https://www.youtube.com/playlist?list=PLFSTTwVw-c1F2Dy9J8vYlsPXGbsRwc5OR)
 
 ## Schritt für Schritt Projekte
 
