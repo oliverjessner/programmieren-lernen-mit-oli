@@ -39,7 +39,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 [YouTube Playlist](https://www.youtube.com/playlist?list=PLFSTTwVw-c1GdSaq9yp9jjlo55IJZ4Oq7)
 
 ## Taschenmonster
-🕐 Dauer: 1h 35min+
+🕐 Dauer: 1h 35min+\
 😀 Geignet für: Fortgeschrittene\
 🔧 Anforderungen: HTML, CSS, JavaScript, NodeJS, Tiled
 
