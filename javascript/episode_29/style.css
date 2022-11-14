@@ -1,0 +1,36 @@
+:root {
+    --gap: 15px;
+    --padding: 10px;
+    --border: 1px solid black;
+    --border-radius: 10px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+nav {
+    border-right: var(--border);
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: var(--padding);
+    border-right: var(--border);
+}
+
+.post {
+    padding: var(--padding);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    border-color: blue;
+}

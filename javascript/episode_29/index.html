@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Episode 29: Observer Pattern</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav>
+            <div class="user-panel">
+                <h3>Zwitscher</h3>
+                <p>
+                    <span>Welcome</span>
+                    <span class="welcome-message-span">{{placeholder}}</span>
+                </p>
+            </div>
+        </nav>
+        <main>
+            <h3>Home</h3>
+            <p>Write a new Zwitscher Message</p>
+            <input placeholder="{{placeholder}}" class="new-message-input" />
+
+            <div>
+                <div class="post">
+                    <p>
+                        <span class="post-username-span">{{placeholder}}</span>
+                        <span>1h ago</span>
+                    </p>
+                    <p>Welcome to my own social media</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="settings">
+            <h3>Change your Username</h3>
+            <input type="text" class="change-username-input" />
+        </div>
+        <script type="module" src="logic.js"></script>
+    </body>
+</html>
