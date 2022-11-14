@@ -10,9 +10,17 @@ export default class Observable {
     }
 
     unsubsribe(remObserver) {
-        if (observer instanceof Observer) {
+        if (remObserver instanceof Observer) {
             this.#observers = this.#observers.filter(observer => observer !== remObserver);
         }
+    }
+
+    autoNotify() {
+        const changeUsername = document.querySelector('.change-username-input');
+
+        changeUsername.addEventListener('keyup', e => {
+            this.notify(e.target.value);
+        });
     }
 
     notify(data) {

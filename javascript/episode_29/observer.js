@@ -1,11 +1,11 @@
 export default class Observer {
-    #domObject;
+    domObject;
 
     constructor(selector) {
-        this.#domObject = document.querySelector(selector);
+        this.domObject = document.querySelector(selector);
     }
 
     update(text) {
-        this.#domObject.innerText = text;
+        this.domObject.innerText = text;
     }
 }

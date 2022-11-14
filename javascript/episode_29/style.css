@@ -34,3 +34,12 @@ main {
     border-radius: var(--border-radius);
     border-color: blue;
 }
+
+.remove-span {
+    float: right;
+    cursor: pointer;
+}
+
+.remove-span:hover {
+    color: red;
+}
