@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+main {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* chat message */
+div {
+    height: 500px;
+    border: solid 1px black;
+}
+
+p {
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+}
