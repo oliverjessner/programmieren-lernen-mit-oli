@@ -1,0 +1,21 @@
+html,
+body,
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.cell {
+    background-color: #ff4a4a;
+    border-radius: 10px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+}

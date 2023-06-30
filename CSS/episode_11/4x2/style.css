@@ -1,0 +1,19 @@
+main {
+    padding: 20px;
+    display: grid;
+    gap: 15px;
+    /*
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    */
+
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    /*auto-fill FILLS the row with as many columns as it can fit.
+     So it creates implicit columns whenever a new column can fit,
+      because it’s trying to FILL the row with as many columns as it can. 
+      The newly added columns can and may be empty, but they will 
+      still occupy a designated space in the row.*/
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
