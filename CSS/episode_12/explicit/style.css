@@ -1,0 +1,27 @@
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 420px;
+}
+
+.subnavi {
+    flex-grow: 1;
+}
+
+.body {
+    flex-grow: 6;
+}
+
+.header,
+.footer {
+    height: 130px;
+}

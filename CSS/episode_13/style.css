@@ -1,0 +1,17 @@
+h1,
+h2,
+h3 {
+    margin-bottom: 0.75rem;
+}
+
+h1:has(+ h3) {
+    margin-bottom: 0.25rem;
+}
+
+article:has(h2, h3) {
+    background-color: #6b97c6;
+}
+
+article:has(h1):has(h3) {
+    background-color: #53a7a7;
+}

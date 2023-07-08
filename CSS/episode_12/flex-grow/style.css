@@ -1,0 +1,27 @@
+main {
+    margin: 20px;
+
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+small {
+    font-size: 20px;
+}
+h2 {
+    margin: 0;
+}
+
+article {
+    margin: 20px;
+}
+
+.small {
+    flex-grow: 1;
+}
+
+.big {
+    flex-grow: 3;
+    color: white;
+    background-color: rgb(75, 38, 238);
+}

@@ -1,0 +1,9 @@
+breite aller elemente = 198px
+1000px - 198px = 802px
+Freespace = 802px
+
+Freespace / growSum = 200,5px
+
+Small = 99px  + 200,5px = 299,5px
+big = 99px + (3 * 200,5px) = 700,5px
+ 
