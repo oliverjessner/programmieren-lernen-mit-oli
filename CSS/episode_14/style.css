@@ -1,0 +1,13 @@
+.normal::first-letter {
+    initial-letter: normal;
+}
+
+.double::first-letter {
+    initial-letter: 2;
+    margin-right: 2.5px;
+}
+
+.triple::first-letter {
+    initial-letter: 3 4;
+    margin-right: 2.5px;
+}
