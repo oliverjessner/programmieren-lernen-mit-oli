@@ -1,0 +1,9 @@
+.close {
+    --color: #9d00ff;
+    --hover: #90567b;
+}
+
+.close:hover,
+.close:focus {
+    box-shadow: inset -6.5em 0 0 0 var(--hover), inset 6.5em 0 0 0 var(--hover);
+}

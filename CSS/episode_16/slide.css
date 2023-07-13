@@ -1,0 +1,9 @@
+.slide {
+    --color: #6aff00;
+    --hover: #314e3b;
+}
+
+.slide:hover,
+.slide:focus {
+    box-shadow: inset 10.5em 0 0 0 var(--hover);
+}

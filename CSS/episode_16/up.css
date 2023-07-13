@@ -1,0 +1,9 @@
+.up {
+    --color: #fe5053;
+    --hover: #efc245;
+}
+
+.up:hover,
+.up:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
