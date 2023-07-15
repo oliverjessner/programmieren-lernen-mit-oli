@@ -1,0 +1,19 @@
+.pulse {
+    --color: #dc1d7c;
+    --hover: #ff0084;
+}
+
+.pulse:hover,
+.pulse:focus {
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+
+    100% {
+        box-shadow: 0 0 0 2em transparent;
+    }
+}

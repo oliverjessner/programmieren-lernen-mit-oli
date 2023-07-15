@@ -4,14 +4,13 @@
 }
 
 /*
-inset
-The horizontal offset 0 
-The vertical offset 0 
-The blur radius (optional) 0 
-The spread radius (optional) 2em
-Color var(--hover);
+inset inner box shadow
+horizontal offset 0
+vertical offset 0 
+blur radius 0 
+spread radius 2em 
+color 
 */
-
 .fill:hover,
 .fill:focus {
     box-shadow: inset 0 0 0 2em var(--hover);

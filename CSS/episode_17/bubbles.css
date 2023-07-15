@@ -1,0 +1,53 @@
+.bubbles {
+    --children: 5;
+    --color: rgb(146, 17, 17);
+    --bubble-width: calc(100% / var(--children));
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bubbles span {
+    position: absolute;
+    left: calc((var(--child) - 1) * var(--bubble-width));
+    width: var(--bubble-width);
+    height: 100%;
+    background-color: var(--color);
+    transform: translateY(150%);
+    border-radius: 35%;
+    transition: 0.5s;
+    transition-delay: calc((var(--child) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.bubbles:hover,
+.bubbles:focus {
+    color: black;
+    border-color: var(--color);
+}
+
+.bubbles:hover span,
+.bubbles:focus span {
+    transform: translateY(0) scale(2);
+}
+
+.bubbles span:nth-child(1) {
+    --child: 1;
+}
+
+.bubbles span:nth-child(2) {
+    --child: 2;
+}
+
+.bubbles span:nth-child(3) {
+    --child: 3;
+}
+
+.bubbles span:nth-child(4) {
+    --child: 4;
+}
+
+.bubbles span:nth-child(5) {
+    --child: 5;
+}
