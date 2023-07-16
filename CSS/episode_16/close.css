@@ -5,5 +5,5 @@
 
 .close:hover,
 .close:focus {
-    box-shadow: inset -6.5em 0 0 0 var(--hover), inset 6.5em 0 0 0 var(--hover);
+    box-shadow: inset -5.5em 0 0 0 var(--hover), inset 5.5em 0 0 0 var(--hover);
 }
