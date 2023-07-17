@@ -1,0 +1,45 @@
+.container .hamburger {
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .hamburger .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+
+.container .hamburger .line-top {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.container .hamburger .line-middle {
+    transition: transform 0.2s ease-in-out;
+}
+
+.container .hamburger .line-bottom {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.container input[type='checkbox']:checked ~ .hamburger .line-top {
+    transform: rotate(45deg);
+}
+
+.container input[type='checkbox']:checked ~ .hamburger .line-middle {
+    transform: scaleY(0);
+}
+
+.container input[type='checkbox']:checked ~ .hamburger .line-bottom {
+    transform: rotate(-45deg);
+}

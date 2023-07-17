@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Jura:wght@400;500;600&family=Raleway&display=swap');
+
+html,
+body {
+    font-family: 'comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+    height: 60px;
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.navbar .menu-items {
+    display: flex;
+}
+
+.container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.navbar .menu-items {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 100%;
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    transform: translate(-150%);
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.navbar .menu-items li {
+    font-size: 1.5rem;
+    list-style: none;
+    color: #0e2431;
+    font-weight: 500;
+}
+
+.container input[type='checkbox']:checked ~ .menu-items {
+    transform: translateX(0);
+}
