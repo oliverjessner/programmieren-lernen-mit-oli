@@ -9,7 +9,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## HTML
 
-🕐 Dauer: 40min\
+🕐 Dauer: 43min\
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: Keine
 
@@ -17,7 +17,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## CSS
 
-🕐 Dauer: 2h 15min\
+🕐 Dauer: 3h 42min\
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML
 
@@ -33,13 +33,13 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## NodeJS
 
-🕐 Dauer: 45min+\
+🕐 Dauer: 1h 7min+\
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML, CSS, JavaScript
 
 [YouTube Playlist](https://www.youtube.com/playlist?list=PLFSTTwVw-c1GdSaq9yp9jjlo55IJZ4Oq7)
 
-## Taschenmonster
+## Taschenmonster (Abgebrochen)
 
 🕐 Dauer: 1h 35min+\
 😀 Geignet für: Fortgeschrittene\
