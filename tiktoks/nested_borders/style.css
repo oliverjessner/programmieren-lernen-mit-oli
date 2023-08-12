@@ -1,0 +1,17 @@
+* {
+    --padding: 10px;
+    --radius: 25px;
+    --nested-radius: calc(var(--radius) - var(--padding));
+}
+
+.outer {
+    border: 3px solid red;
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.inner {
+    border: 3px solid blue;
+    height: 200px;
+    border-radius: var(--nested-radius);
+}
