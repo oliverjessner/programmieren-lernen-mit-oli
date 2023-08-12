@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cta-button {
+    @apply bg-tahiti-400 text-white px-4 py-1 mt-2 uppercase cursor-pointer hover:bg-tahiti-600 transition-all;
+}
+
+@layer components {
+    .card {
+        @apply rounded-lg bg-white p-5 drop-shadow-2xl;
+        width: 26rem;
+        border: 0.7px solid theme(colors.tahiti.900);
+    }
+}
