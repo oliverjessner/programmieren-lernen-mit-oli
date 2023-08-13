@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Jura:wght@400;500;600&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&wght@400;500;600;700&display=swap');
 
 html,
 body {
@@ -10,10 +10,6 @@ body {
 
 .container {
     max-width: 1050px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    display: block;
     height: 60px;
 }
 
@@ -22,17 +18,12 @@ body {
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
 
-.navbar .menu-items {
-    display: flex;
-}
-
 .container .checkbox {
     position: absolute;
-    display: block;
     height: 32px;
     width: 32px;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -54,7 +45,6 @@ body {
 .navbar .menu-items li {
     font-size: 1.5rem;
     list-style: none;
-    color: #0e2431;
     font-weight: 500;
 }
 
