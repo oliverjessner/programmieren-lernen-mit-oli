@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.blend {
+    background: url(salzburg.webp) center / cover;
+    height: 100vh;
+}
+
+.blend:before {
+    content: '';
+    position: absolute;
+    background: url(mask.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+}
