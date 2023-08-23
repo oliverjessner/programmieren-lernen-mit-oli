@@ -1,0 +1,28 @@
+* {
+    --font-weight: 400;
+    font-weight: var(--font-weight);
+
+    @media (prefers-contrast: more) {
+        --font-weight: 900;
+    }
+
+    @media (prefers-contrast: less) {
+        --font-weight: 100;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --color: #fff;
+        --background: #17181c;
+    }
+
+    @media (prefers-color-scheme: light) {
+        --background: #fff;
+        --color: #17181c;
+    }
+}
+
+html,
+body {
+    color: var(--color);
+    background-color: var(--background);
+}
