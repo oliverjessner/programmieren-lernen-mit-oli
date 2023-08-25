@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/prism.css" />
+
+        <title>HTML Job Questions Q7</title>
+    </head>
+    <body>
+        <h1>Q7: Was ist der Vorteil von collapsing white space?</h1>
+        <div class="answer">
+            <h1>A:</h1>
+            <p>
+                In HTML wird eine leere Abfolge von Leerzeichen als einzelnes Leerzeichen behandelt. Das liegt daran,
+                dass der Browser mehrere Leerzeichen zu einem einzigen Leerzeichen zusammenführt. Dies hilft
+                Entwicklern, Zeilen Text einzurücken, ohne sich um mehrere Leerzeichen Gedanken machen zu müssen, und
+                trägt zur Lesbarkeit und Verständlichkeit bei.
+            </p>
+            <pre>
+<code class="language-html"> 
+    &lt;p&gt;
+        Hallo        Welt
+    &lt;/p&gt;
+
+    &lt;pre&gt;
+        Hallo        Welt
+    &lt;/pre&gt;
+</code>
+</pre>
+            <p>Hallo Welt</p>
+
+            <pre>
+    Hallo        Welt
+</pre
+            >
+        </div>
+        <button>Zeige Lösung</button>
+
+        <p class="footer">
+            <a class="next-question" href="q6.html">vorherige frage</a>
+            <a class="next-question" href="q8.html">nächste frage</a>
+        </p>
+
+        <script src="logic/script.js"></script>
+        <script src="logic/prism.js"></script>
+    </body>
+</html>
