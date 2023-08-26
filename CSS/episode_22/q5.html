@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/prism.css" />
+
+        <title>CSS Job Questions Q5</title>
+    </head>
+    <body>
+        <h1>Q5: Was ist der Unterschied zwischen Pseudo-Klassen und Pseudo-Elemente?</h1>
+        <div class="answer">
+            <h1>A:</h1>
+            <ul>
+                <li>: Pseudo-Klasse</li>
+                <li>:: Pseudo-Element</li>
+            </ul>
+            <p>
+                Eine CSS-Pseudo-Klasse ist ein Schlüsselwort, das einem Selektor hinzugefügt wird und einen speziellen
+                Zustand des ausgewählten Elements angibt. Zum Beispiel die Pseudo-Klasse :hover.
+            </p>
+            <p>
+                Pseudo-Elemente verhalten sich ähnlich. Allerdings wirken sie so, als hätten Sie ein völlig neues
+                HTML-Element zur Auszeichnung hinzugefügt.
+            </p>
+            <pre>
+<code class="language-css"> 
+    div:hover {
+        background-color: red;
+    }
+
+    div::after {
+        content: "Pseudo Elemente";
+    }
+</code>
+</pre>
+        </div>
+
+        <p class="footer">
+            <a class="next-question" href="q4.html">vorherige frage</a>
+            <button>Zeige Lösung</button>
+            <a class="next-question" href="q6.html">nächste frage</a>
+        </p>
+
+        <script src="logic/script.js"></script>
+        <script src="logic/prism.js"></script>
+    </body>
+</html>

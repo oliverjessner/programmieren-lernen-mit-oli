@@ -1,0 +1,109 @@
+* {
+    --color: #dc1d7c;
+    --hover: #ff0084;
+
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background: #17181c;
+    color: #fff;
+    height: 100%;
+}
+
+body {
+    padding: 10%;
+    overflow-y: hidden;
+}
+
+.answer {
+    visibility: hidden;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    max-height: 60%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer a {
+    font-size: 1.2em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1,
+h2,
+p {
+    padding: 10px 0;
+}
+
+button {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    background: none;
+    border: 2px solid;
+    border-radius: 0.5em;
+    line-height: 1;
+
+    cursor: pointer;
+    padding: 1em 2em;
+    color: var(--color);
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+
+    100% {
+        box-shadow: 0 0 0 2em transparent;
+    }
+}
+
+a:hover {
+    color: var(--color);
+}
+
+.answer pre {
+    overflow-y: scroll;
+    max-height: 350px;
+}
+
+code {
+    font-size: 2em;
+}
+
+img {
+    --width: 40%;
+    width: calc(var(--width));
+    margin-left: calc(50% - var(--width) / 2);
+}
+
+pre[class*='language-'] {
+    padding: 0 !important;
+}
+
+ul {
+    margin-left: 100px;
+    font-size: 1.4em;
+}

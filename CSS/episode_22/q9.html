@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/prism.css" />
+
+        <title>CSS Job Questions Q9</title>
+    </head>
+    <body>
+        <h1>Q9: Nenne alle Selectoren die du kennst</h1>
+        <div class="answer">
+            <h1>A:</h1>
+
+            <p></p>
+            <pre>
+<code class="language-css"> 
+    /* Universal Selector */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Type Selector oder Element Selector */
+    h1 {
+        color: red;
+    }
+
+    /* Grouping Selector */
+    h1, h2, h3 {
+        color: white;
+    }
+
+    /* ID Selector */
+    #id {
+        color: green;
+    }
+
+
+    /* Class Selector */
+    .class {
+        color: blue;
+    }
+
+    /* Attribute Selector */
+    input[type="text"] {
+        color: yellow;
+    }
+
+    /* Child combinator */
+    div > p {
+        color: orange;
+    }
+
+    /* Adjacent sibling combinator */
+    div + p {
+        color: purple;
+    }
+
+    /* General sibling combinator */
+    div ~ p {
+        color: pink;
+    }
+</code>
+</pre>
+        </div>
+
+        <p class="footer">
+            <a class="next-question" href="q8.html">vorherige frage</a>
+            <button>Zeige Lösung</button>
+            <a class="next-question" href="q1.html">von vorne beginnen</a>
+        </p>
+
+        <script src="logic/script.js"></script>
+        <script src="logic/prism.js"></script>
+    </body>
+</html>

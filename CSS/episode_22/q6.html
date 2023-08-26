@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/prism.css" />
+
+        <title>CSS Job Questions Q6</title>
+    </head>
+    <body>
+        <h1>Q6: Schreibe einen Selector für das zweite Input Element.</h1>
+        <p>
+            Dieser Selector darf nur das zweite Input Element verändern, du darfst nth-child und andere pseudo klassen
+            nicht verwenden. Stelle dir vor, du hast keinen Zugriff auf den HTML Code. Das Element soll eine rote
+            Hintergrundfarbe bekommen.
+        </p>
+        <pre>
+<code class="language-html"> 
+    &lt;input type="text" /&gt;
+    &lt;input type="number" /&gt;
+    &lt;input type="email" /&gt;
+</code>
+</pre>
+        <div class="answer">
+            <h1>A:</h1>
+            <p>Attribute selectors</p>
+            <pre>
+<code class="language-css"> 
+    input[type="number"] {
+        background-color: red;
+    }
+</code>
+</pre>
+        </div>
+
+        <p class="footer">
+            <a class="next-question" href="q5.html">vorherige frage</a>
+            <button>Zeige Lösung</button>
+            <a class="next-question" href="q7.html">nächste frage</a>
+        </p>
+
+        <script src="logic/script.js"></script>
+        <script src="logic/prism.js"></script>
+    </body>
+</html>
