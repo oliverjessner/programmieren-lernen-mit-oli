@@ -9,7 +9,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## HTML
 
-🕐 Dauer: 43min\
+🕐 Dauer: 53min\
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: Keine
 
@@ -17,7 +17,7 @@ Zum channel gehts [hier](https://www.youtube.com/channel/UCECkwCFUUK3IUphrl_KG04
 
 ## CSS
 
-🕐 Dauer: 3h 42min\
+🕐 Dauer: 4h+\
 😀 Geignet für: Anfänger\
 🔧 Anforderungen: HTML
 
