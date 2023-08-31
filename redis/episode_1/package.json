@@ -1,0 +1,16 @@
+{
+    "name": "episode_1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-redis": "^0.1.7",
+        "redis": "^4.6.8"
+    }
+}
