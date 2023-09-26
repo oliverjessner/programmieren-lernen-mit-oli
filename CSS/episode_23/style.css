@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+html,
+body {
+    --border-radius: 30px;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://oliverjessner.at/assets/images/gen/content/css_23/room.webp) no-repeat center center fixed;
+    background-size: cover;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+}
+
+.text {
+    padding: 20px 0;
+}
+
+.card {
+    width: 800px;
+    padding: 20px;
+    height: 450px;
+    background: rgb(0 0 0 / 5%);
+    box-shadow: inset 1px 1.5px 2px #fff9, inset 1px -0.5px 2px #ffffff4d,
+        0 0.6021873017743928px 0.6021873017743928px -1.25px #0000002e,
+        0 2.288533303243457px 2.288533303243457px -2.5px #00000029, 0 10px 10px -3.75px #00000010;
+    backdrop-filter: blur(45px);
+    border-radius: var(--border-radius);
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    perspective: 1000px;
+}
+
+.center {
+    margin: auto 0;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.25s;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-small {
+    width: 400px;
+    height: 250px;
+}
+
+.left .card-small {
+    transform: rotateY(30deg);
+}
+
+.right .card-small {
+    transform: rotateY(-30deg);
+}
+
+.left .card-small:nth-child(1) {
+    background-image: url('https://oliverjessner.at/assets/images/gen/content/css_23/picture1.webp');
+}
+
+.left .card-small:nth-child(2) {
+    background-image: url('https://oliverjessner.at/assets/images/gen/content/css_23/picture2.webp');
+}
+
+.right .card-small:nth-child(1) {
+    background-image: url('https://oliverjessner.at/assets/images/gen/content/css_23/picture3.webp');
+}
+
+.right .card-small:nth-child(2) {
+    background-image: url('https://oliverjessner.at/assets/images/gen/content/css_23/picture4.webp');
+}
+
+.year {
+    font-weight: 900;
+    text-align: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card::before,
+.card::after {
+    --size: 8px;
+
+    content: '';
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    bottom: calc(var(--size) * 2 * -1);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255 255 255 / 75%);
+    border-radius: 4px;
+}
+
+.card::after {
+    margin-left: calc(var(--size) * 6 * -1);
+}
+
+.card::before {
+    width: 80px;
+}
+
+/*
+Die CSS-Eigenschaft "Perspective" 
+bestimmt den Abstand zwischen 
+der z=0-Ebene und dem Benutzer, 
+um einem 3D-positionierten Element 
+eine Perspektive zu geben.
+
+Jedes 3D-Element mit z>0 wird größer; 
+Jedes 3D-Element mit z<0 wird kleiner. 
+Die Stärke des Effekts wird durch 
+den Wert dieser Eigenschaft bestimmt. 
+Große Perspektivwerte bewirken eine 
+kleine Transformation; Kleine Werte 
+der Perspektive bewirken eine 
+große Transformation.
+*/
