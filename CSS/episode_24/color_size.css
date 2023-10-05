@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent {
+    background-color: cadetblue;
+    width: 300px;
+    height: 300px;
+    color: white;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+}
+
+.parent *:nth-child(1) {
+    background-color: royalblue;
+}
+
+.parent *:nth-child(2),
+.parent *:nth-child(3) {
+    background-color: purple;
+}
+
+.spacer1,
+.spacer2,
+.spacer3 {
+    background-color: tomato !important;
+}

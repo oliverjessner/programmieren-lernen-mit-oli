@@ -1,0 +1,54 @@
+.parent1 {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*display: grid;*/
+    /*grid-template-rows: 100px 100px;*/
+}
+
+.child1 {
+    margin-bottom: 10px;
+}
+
+.child2 {
+    margin-top: 20px;
+}
+
+.parent2 {
+    width: 300px;
+    height: 300px;
+    color: white;
+    /*display: flex;*/
+    /*display: grid;*/
+    /*grid-template-columns: 100px 100px;*/
+}
+
+.child3 {
+    margin-right: 10px;
+    float: left;
+}
+
+.child4 {
+    margin-left: 20px;
+    float: left;
+}
+
+.parent3 {
+    width: 300px;
+    height: 300px;
+}
+
+.parent3 span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.parent3 span:nth-child(2) {
+    margin-left: 30px;
+}
+
+.spacer1 {
+    height: 30px;
+}
+
+.spacer2 {
+    height: 10px;
+}

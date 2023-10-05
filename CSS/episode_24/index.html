@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="color_size.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <title>Margins are bad?!</title>
+    </head>
+    <body>
+        <div class="parent1 parent">
+            <div class="child child1">Horizontal ⬇️</div>
+            <div class="child child2">Horizontal ⬆️</div>
+        </div>
+        <br />
+        <div class="parent2 parent">
+            <div class="child child3">vertical ➡️</div>
+            <div class="child child4">vertical ⬅️</div>
+        </div>
+        <br />
+        <div class="parent3 parent"><span>span 1 ➡️</span><span>⬅️ span 2</span></div>
+        <br />
+        <div class="parent1 parent">
+            <div class="child child1">Horizontal but br inbetween ⬇️</div>
+            <br />
+            <div class="child child2">Horizontal but br inbetween ⬆️</div>
+        </div>
+        <br />
+        <div class="parent1 parent">
+            <div>
+                <p class="child1">nested child 1 Horizontal</p>
+            </div>
+            <div class="child2">nested child2 Horizontal</div>
+        </div>
+        <br />
+        <div class="parent1 parent">
+
+                <div class="child">child with spacer</div>
+                <div class="spacer1">
+                </div>
+                <div class="child">child with spacer</div>
+                <div class="spacer2">
+                </div>
+                <div class="child" style="background: blueviolet;">child with spacer</div>
+            </div>
+        </div>
+    </body>
+</html>
