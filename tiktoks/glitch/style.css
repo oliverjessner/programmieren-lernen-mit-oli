@@ -1,0 +1,23 @@
+.infinite-bounce {
+    position: relative;
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate (-5px, 5px);
+    }
+    50% {
+        transform: translate (5px, -5px);
+    }
+    75% {
+        transform: translate(-5px, 5px);
+    }
+    100% {
+        transform: translate (0);
+    }
+}
