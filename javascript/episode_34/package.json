@@ -1,0 +1,15 @@
+{
+    "name": "episode_34",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build": "rollup --config"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@rollup/plugin-terser": "^0.4.4"
+    }
+}
