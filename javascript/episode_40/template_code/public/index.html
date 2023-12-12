@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Real World Example: Design Patterns</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- https://cdnjs.com/libraries/font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="options">
+                <label for="text">ToDo</label>
+                <input id="text" type="text" class="todo-input" tabindex="0" />
+                <select title="urgency" id="urgency">
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                </select>
+                <div class="colors">
+                    <label class="red">
+                        <input type="radio" name="color" value="red" checked />
+                        <span>red</span>
+                    </label>
+                    <label class="green">
+                        <input type="radio" name="color" value="green" />
+                        <span>green</span>
+                    </label>
+                    <label class="blue">
+                        <input type="radio" name="color" value="blue" />
+                        <span>blue</span>
+                    </label>
+                </div>
+                <input id="date" type="date" title="due date" />
+                <div class="text-center"><button class="todo-button">Add</button></div>
+            </div>
+
+            <div class="todo-list" id="todo-list"><h1>ToDos</h1></div>
+        </main>
+
+        <script type="module" src="logic.js"></script>
+    </body>
+</html>
