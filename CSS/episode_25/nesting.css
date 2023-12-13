@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    div {
+        padding: 10px;
+    }
+
+    .pie {
+        background-color: palevioletred;
+
+        p:first-child::before {
+            content: '！ ';
+        }
+    }
+
+    .chili {
+        background-color: orangered;
+
+        p:first-child::before {
+            content: '‼️ ';
+        }
+    }
+
+    .wurst-case {
+        background-color: firebrick;
+
+        p:first-child::before {
+            content: '☣️ ';
+        }
+    }
+}
