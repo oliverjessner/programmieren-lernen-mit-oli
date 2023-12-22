@@ -1,0 +1,15 @@
+div {
+    padding: 5px;
+
+    & .badge {
+        background-color: red;
+
+        & small {
+            background-color: green;
+        }
+    }
+
+    & p {
+        background-color: blue;
+    }
+}

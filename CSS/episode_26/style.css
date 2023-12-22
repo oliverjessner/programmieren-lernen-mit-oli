@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    --snap-size: 300px;
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: var(--snap-size);
+    height: var(--snap-size);
+}
+
+.container {
+    display: flex;
+    outline: 2px solid lightgray;
+    border-radius: 5px;
+    flex: none;
+    overflow: auto;
+
+    width: var(--snap-size);
+    height: var(--snap-size);
+}
+
+.x {
+    flex-flow: row nowrap;
+    overflow-y: hidden;
+}
+
+.y {
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+}
+
+.x.mandatory-scroll-snapping {
+    scroll-snap-type: x mandatory;
+}
+
+.x.proximity-scroll-snapping {
+    scroll-snap-type: x proximity;
+}
+
+/*
+Der viewport des Scroll-Containers muss 
+an einer Snap-Position einrasten, wenn er derzeit nicht gescrollt wird.
+*/
+.y.mandatory-scroll-snapping {
+    scroll-snap-type: x mandatory;
+}
+
+/*
+Das visuelle Ansichtsfenster dieses Bildlaufcontainers rastet 
+möglicherweise an einer Fangposition ein, wenn er derzeit nicht 
+gescrollt wird. Der Benutzeragent entscheidet anhand der
+ Bildlaufparameter, ob er einrastet oder nicht. 
+ Dies ist die standardmäßige Fangstriktheit, wenn eine 
+ Fangachse angegeben ist.*/
+
+.y.proximity-scroll-snapping {
+    scroll-snap-type: x proximity;
+}
+
+.snap-item {
+    scroll-snap-align: center;
+
+    width: var(--snap-width);
+    height: var(--snap-height);
+}

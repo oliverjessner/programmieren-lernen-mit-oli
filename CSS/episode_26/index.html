@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Episode 26 scroll-snap-type</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="https://oliverjessner.at/assets/images/favicon/favicon.png" />
+    </head>
+    <body>
+        <div class="container x mandatory-scroll-snapping" dir="rtl">
+            <div class="snap-item"><img alt="a pizza" src="imgs/pizza.webp" /></div>
+            <div class="snap-item"><img alt="a lasagna" src="imgs/lasagna.webp" /></div>
+            <div class="snap-item"><img alt="a risotto" src="imgs/risotto.webp" /></div>
+            <div class="snap-item"><img alt="spaghetti" src="imgs/spaghetti.webp" /></div>
+        </div>
+
+        <div class="container x proximity-scroll-snapping" dir="rtl">
+            <div class="snap-item"><img alt="a pizza" src="imgs/pizza.webp" /></div>
+            <div class="snap-item"><img alt="a lasagna" src="imgs/lasagna.webp" /></div>
+            <div class="snap-item"><img alt="a risotto" src="imgs/risotto.webp" /></div>
+            <div class="snap-item"><img alt="spaghetti" src="imgs/spaghetti.webp" /></div>
+        </div>
+
+        <div class="container y mandatory-scroll-snapping" dir="ltr">
+            <div class="snap-item"><img alt="a pizza" src="imgs/pizza.webp" /></div>
+            <div class="snap-item"><img alt="a lasagna" src="imgs/lasagna.webp" /></div>
+            <div class="snap-item"><img alt="a risotto" src="imgs/risotto.webp" /></div>
+            <div class="snap-item"><img alt="spaghetti" src="imgs/spaghetti.webp" /></div>
+        </div>
+    </body>
+</html>
