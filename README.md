@@ -26,4 +26,4 @@ Zum TikTok Channel gehts [hier](https://www.tiktok.com/@oliverjessner)
 
 ## Blog
 
-Einige der Themen werden auch in meinem Blog behandelt. Schau doch mal vorbei: [https://oliverjessner.at](https://oliverjessner.at)
+Einige der Themen werden auch in meinem Blog behandelt. Schau doch mal vorbei: [oliverjessner.at](https://oliverjessner.at)
