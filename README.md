@@ -14,7 +14,7 @@ Herzlich willkommen auf dem offiziellen GitHub-Repository für meinen YouTube & 
 
 ## YouTube Channel
 
-Zum channel gehts [hier](https://www.youtube.com/@oliverjessner)
+Zum YouTube Channel gehts [hier](https://www.youtube.com/@oliverjessner)
 
 | HTML5    | CSS3 | Tailwind | JavaScript ES6+ | NodeJS  | Bun    | Redis   |
 | -------- | ---- | -------- | --------------- | ------- | ------ | ------- |
@@ -22,4 +22,8 @@ Zum channel gehts [hier](https://www.youtube.com/@oliverjessner)
 
 ## TikTok Channel
 
-Zum channel gehts [hier](https://www.tiktok.com/@oliverjessner)
+Zum TikTok Channel gehts [hier](https://www.tiktok.com/@oliverjessner)
+
+## Blog
+
+Einige der Themen werden auch in meinem Blog behandelt. Schau doch mal vorbei: [https://oliverjessner.at](https://oliverjessner.at)
