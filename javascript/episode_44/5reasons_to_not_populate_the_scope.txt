@@ -1,0 +1,29 @@
+Vermeidung von Namenskonflikten: Im global scope können leicht 
+Namenskonflikte entstehen, insbesondere in größeren Projekten oder in 
+Zusammenarbeit mit anderen Entwicklern. Wenn jeder Entwickler seine 
+Variablen und Funktionen im globalen scope platziert, 
+besteht die Gefahr, dass sich die Namen überschneiden und zu 
+unerwartetem Verhalten führen.
+
+Lesbarkeit und Wartbarkeit: Ein globaler scope kann
+schnell unübersichtlich werden, wenn viele Variablen und Funktionen 
+hinzugefügt werden. Dies kann die Lesbarkeit des Codes beeinträchtigen 
+und die Wartbarkeit erschweren. Durch die Verwendung von lokalen
+Namensräumen und Modulen können Entwickler den Code besser organisieren.
+
+Isolation von Funktionalitäten: Indem Entwickler Funktionen und 
+Variablen in lokalen Namensräumen oder Modulen halten, können sie 
+bestimmte Funktionalitäten isolieren. Dies fördert die Modulare 
+Programmierung und erleichtert das Testen, Debuggen und Ändern 
+von Code, ohne andere Teile der Anwendung zu beeinträchtigen.
+
+Verbesserung der Codequalität: Ein strukturierter Ansatz zur 
+Organisation von Code, bei dem Funktionen und Variablen in 
+geeigneten Kontexten platziert werden, trägt dazu bei, die 
+Codequalität zu verbessern. Dies erleichtert es Entwicklern,
+den Code zu verstehen und erleichtert auch die Zusammenarbeit.
+
+Vermeidung von unbeabsichtigten Side Effects: 
+Wenn eine Variable global ist, kann sie von überall im Code verändert 
+werden, was zu schwer nachvollziehbarem Verhalten führen kann. 
+Lokale Variablen begrenzen den Bereich von Side Effects.
