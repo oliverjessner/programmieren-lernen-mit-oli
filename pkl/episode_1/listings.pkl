@@ -1,0 +1,5 @@
+fixed birds: Listing<String> = new {
+  "Pigeon"
+  "Hawk"
+  "Penguin"
+}

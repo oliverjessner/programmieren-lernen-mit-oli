@@ -1,0 +1,7 @@
+duration1 = 5.ns  // nanoseconds (smallest unit)
+duration2 = 5.us  // microseconds
+duration3 = 5.ms  // milliseconds
+duration4 = 5.s   // seconds
+duration5 = 5.min // minutes
+duration6 = 5.h   // hours
+duration7 = 3.d   // days (largest unit)

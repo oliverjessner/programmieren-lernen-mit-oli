@@ -1,0 +1,17 @@
+module acmecicd
+
+class Pipeline {
+  name: String(nameRequiresBranchName)?
+
+  hidden nameRequiresBranchName = (_) ->
+      if (branchName == null)
+        throw("Pipelines that set a 'name' must also set a 'branchName'.")
+      else true
+
+  branchName: String?
+}
+
+timeout: Int(this >= 3)
+
+pipelines: Listing<Pipeline>
+

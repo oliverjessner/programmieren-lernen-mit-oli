@@ -1,0 +1,14 @@
+class Bird {
+    name: String
+    lifespan: Int
+    local separator = "," 
+    hidden nameAndLifespanInIndex = "\(name)\(separator) \(lifespan)" 
+}
+
+pigeon = new Bird {
+    name = "Pigeon"
+    lifespan = 8
+   
+}
+
+what = pigeon.nameAndLifespanInIndex

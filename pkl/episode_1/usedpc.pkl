@@ -1,0 +1,6 @@
+amends "computer.pkl"
+
+name = "razer"
+cores = 4
+storage = 1.tb
+runtime = 365.d

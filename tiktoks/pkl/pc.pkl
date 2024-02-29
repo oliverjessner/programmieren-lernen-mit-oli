@@ -1,0 +1,27 @@
+class PC {
+    name: String
+    cores: UInt16
+    gpu: String
+    prevowner {
+        "Oliver"
+    }
+}
+
+usedPC = new PC {
+    name = "razer"
+    cores = 4
+    gpu = "RTX 6000 Ada"
+}
+
+output {
+    files {
+        ["pc.json"] {
+            value = usedPC
+            renderer = new JsonRenderer{}
+        }
+        ["pc.yaml"] {
+            value = usedPC
+            renderer = new YamlRenderer{}
+        }
+    }
+}

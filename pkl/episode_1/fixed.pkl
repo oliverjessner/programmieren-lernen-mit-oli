@@ -1,0 +1,11 @@
+class Bird {
+  wingspan: Int
+  weight: Int
+  fixed wingspanWeightRatio: Float = wingspan / weight
+}
+
+eagle = new Bird{
+    wingspan = 2
+    weight = 1
+    wingspanWeightRatio = 2.0
+}

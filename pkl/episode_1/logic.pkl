@@ -1,0 +1,9 @@
+amends "acmecicd.pkl"
+
+timeout = 3
+pipelines {
+  new {
+    name = "prb"
+    branchName = "main"
+  }
+}

@@ -1,0 +1,19 @@
+human {
+  name = "human"
+  age = 33
+  isProgrammer = true
+  amountLearned = 13.37
+}
+
+output {
+    files {
+        ["human.json"] {
+            value = human
+            renderer = new JsonRenderer{}
+        }
+        ["human.yaml"] {
+            value = human
+            renderer = new YamlRenderer{}
+        }
+    }
+}

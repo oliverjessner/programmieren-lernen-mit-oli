@@ -1,0 +1,14 @@
+hobbies {
+  "programming" 
+  "coffee" 
+  "reading"
+  1337
+}
+
+human {
+  name = "name"
+  age = 32
+  isProgrammer = true
+  amountLearned = 13.37
+  hobby = hobbies
+}

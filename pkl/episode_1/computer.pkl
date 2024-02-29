@@ -1,0 +1,14 @@
+name: String
+cores: UInt16
+storage: DataSize
+runtime: Duration
+used: Boolean = true
+
+output {
+    renderer = new JsonRenderer{
+        converters {
+            [DataSize] = (size) -> "\(size.value) \(size.unit)"
+            [Duration] = (size) -> "\(size.value) \(size.unit)"
+        }
+    }
+}

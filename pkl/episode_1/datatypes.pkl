@@ -1,0 +1,8 @@
+  name = "oliver"
+  age = 32 + 1
+  isOver18 = age > 18
+  ageBin = 0b100001
+  ageHex = 0x0021
+  ageOct = 0o41
+  isProgrammer = true
+  money = 10.125e2

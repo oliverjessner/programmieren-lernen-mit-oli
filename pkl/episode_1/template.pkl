@@ -1,0 +1,16 @@
+soda {
+    type = "beverage"
+    isCarbonated = true
+    hasWater = true
+    price = 1.50
+    alcoholContent = 0
+}
+
+coffee = (soda) {
+    isCarbonated = false
+    price = 3.00
+}
+
+irishCoffe = (coffee) {
+    alcoholContent = 0.05
+}

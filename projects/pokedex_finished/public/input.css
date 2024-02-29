@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+input,
+audio {
+    display: none;
+}
+
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.Ellipse6:hover {
+    cursor: pointer;
+}
+
+@keyframes blink {
+    25% {
+        opacity: 0.85;
+    }
+    50% {
+        opacity: 0.65;
+    }
+    75% {
+        opacity: 0.85;
+    }
+}

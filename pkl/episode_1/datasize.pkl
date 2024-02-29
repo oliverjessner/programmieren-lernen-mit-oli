@@ -1,0 +1,6 @@
+datasize1 = 5.b  // bytes (smallest unit)
+datasize2 = 5.kb // kilobytes
+datasize3 = 5.mb // megabytes
+datasize4 = 5.gb // gigabytes
+datasize5 = 5.tb // terabytes
+datasize6 = 5.pb // petabytes (largest unit)

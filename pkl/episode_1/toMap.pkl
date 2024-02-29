@@ -1,0 +1,9 @@
+class Bird {
+  name: String
+  extinct: Boolean
+}
+
+dodo = new Bird{
+    name = "Dodo"
+    extinct = true
+}.toMap().remove("name").toDynamic()

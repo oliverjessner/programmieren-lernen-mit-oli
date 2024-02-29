@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Pokedex</title>
+        <link rel="stylesheet" href="input.css" />
+        <link rel="icon" href="https://oliverjessner.at/assets/images/favicon/favicon.png" />
+    </head>
+    <body>
+        <input id="file" name="file" type="file" accept="image/gif,image/jpeg,image/jpg,image/webp,image/png" />
+        <audio id="audio-desc"></audio>
+        <audio id="audio-cry"></audio>
+
+        <!-- Figma + Oli Fixes -->
+        <div class="Pokedex" style="width: 647px; height: 491px; position: relative">
+            <div class="Background" style="width: 647px; height: 491px; left: 0px; top: 0px; position: absolute">
+                <div
+                    class="BackgroundLeft"
+                    style="width: 325px; height: 491px; left: 0px; top: 0px; position: absolute"
+                >
+                    <div
+                        class="Rectangle13"
+                        style="
+                            width: 325px;
+                            height: 385px;
+                            left: 0px;
+                            top: 106px;
+                            position: absolute;
+                            background: #fe0165;
+                            border-bottom-left-radius: 12px;
+                            border-left: 3px black solid;
+                            border-right: 3px black solid;
+                            border-bottom: 3px black solid;
+                        "
+                    ></div>
+                    <div
+                        class="Frame10"
+                        style="
+                            width: 322px;
+                            height: 106px;
+                            left: 0px;
+                            top: 0px;
+                            position: absolute;
+                            background: #fe0165;
+                            border-top-left-radius: 12px;
+                            border-top-right-radius: 12px;
+                            border-right: 3px black solid;
+                        "
+                    >
+                        <div
+                            class="Rectangle16"
+                            style="
+                                width: 61px;
+                                height: 53px;
+                                left: 112px;
+                                top: 0px;
+                                position: absolute;
+                                background: #fe0165;
+                                border-top: 3px black solid;
+                            "
+                        ></div>
+
+                        <div
+                            class="Rectangle15"
+                            style="
+                                height: 53px;
+                                left: 170px;
+                                top: 0px;
+                                position: absolute;
+                                background: #fe0165;
+                                border-top-right-radius: 12px;
+                                border-top: 3px black solid;
+                                border-right: 3px black solid;
+                                border-bottom: 3px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Rectangle14"
+                            style="
+                                width: 134.5px;
+                                height: 106px;
+                                left: 0px;
+                                top: 0px;
+                                position: absolute;
+                                background: #fe0165;
+                                border-top-left-radius: 12px;
+                                border-left: 3px black solid;
+                                border-top: 3px black solid;
+                                border-bottom: 3px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Rectangle17"
+                            style="
+                                width: 66.94px;
+                                height: 29.67px;
+                                left: 171.73px;
+                                top: 48.03px;
+                                position: absolute;
+                                transform: rotate(125.03deg);
+                                transform-origin: 0 0;
+                                background: #fe0165;
+                            "
+                        ></div>
+                        <div
+                            class="Line5"
+                            style="
+                                width: 63.2px;
+                                height: 0px;
+                                left: 170.4px;
+                                top: 52.1px;
+                                position: absolute;
+                                transform: rotate(125.03deg);
+                                transform-origin: 0 0;
+                                border: 3px black solid;
+                            "
+                        ></div>
+                    </div>
+                    <div
+                        class="Frame11"
+                        style="
+                            width: 322px;
+                            height: 106px;
+                            left: 0px;
+                            top: 0px;
+                            position: absolute;
+                            background: #fe0165;
+                            border-top-left-radius: 12px;
+                            border-top-right-radius: 12px;
+                            border-right: 3px black solid;
+                        "
+                    >
+                        <div
+                            class="Rectangle16"
+                            style="
+                                width: 61px;
+                                height: 53px;
+                                left: 112px;
+                                top: 0px;
+                                position: absolute;
+                                background: #fe0165;
+                                border-top: 3px black solid;
+                            "
+                        ></div>
+                        <!-- -->
+                        <div
+                            class="Rectangle15"
+                            style="
+                                width: 152px;
+                                height: 53px;
+                                left: 170px;
+                                top: 0px;
+                                position: absolute;
+                                background: #fe0165;
+                                border-top-right-radius: 12px;
+                                border-top: 3px black solid;
+                                border-right: 3px black solid;
+                                border-bottom: 3px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Rectangle14"
+                            style="
+                                width: 134.5px;
+                                height: 106px;
+                                left: 0px;
+                                top: 0px;
+                                position: absolute;
+                                background: #fe0165;
+                                border-top-left-radius: 12px;
+                                border-left: 3px black solid;
+                                border-top: 3px black solid;
+                                border-bottom: 3px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Rectangle17"
+                            style="
+                                width: 66.94px;
+                                height: 29.67px;
+                                left: 171.73px;
+                                top: 48.03px;
+                                position: absolute;
+                                transform: rotate(125.03deg);
+                                transform-origin: 0 0;
+                                background: #fe0165;
+                            "
+                        ></div>
+                        <div
+                            class="Line5"
+                            style="
+                                width: 62px;
+                                height: 0px;
+                                left: 172.5px;
+                                top: 57.5px;
+                                position: absolute;
+                                transform: rotate(123deg);
+                                transform-origin: 0 0;
+                                border: 1.8px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="FrameDotBlue"
+                            style="width: 100px; height: 100px; left: 9px; top: 7px; position: absolute"
+                        >
+                            <div
+                                class="Ellipse5"
+                                style="
+                                    width: 92px;
+                                    height: 92px;
+                                    left: 0px;
+                                    top: 0px;
+                                    position: absolute;
+                                    background: white;
+                                    border-radius: 9999px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                id="upload"
+                                class="Ellipse6"
+                                style="
+                                    width: 76px;
+                                    height: 76px;
+                                    left: 8px;
+                                    top: 8px;
+                                    position: absolute;
+                                    background: #3298cb;
+                                    border-radius: 9999px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Ellipse7"
+                                style="
+                                    width: 24px;
+                                    height: 24px;
+                                    left: 23px;
+                                    top: 20px;
+                                    position: absolute;
+                                    background: #85bdff;
+                                    border-radius: 9999px;
+                                "
+                            ></div>
+                        </div>
+                        <div
+                            class="FrameDotsRedYellowGreen"
+                            style="
+                                left: 163px;
+                                top: 14px;
+                                position: absolute;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                gap: 8px;
+                                display: inline-flex;
+                            "
+                        >
+                            <div class="Red" style="width: 25px; height: 25px; position: relative">
+                                <div
+                                    class="Ellipse2"
+                                    style="
+                                        width: 25px;
+                                        height: 25px;
+                                        left: 0px;
+                                        top: 0px;
+                                        position: absolute;
+                                        background: #ff0b0e;
+                                        border-radius: 9999px;
+                                        border: 2px black solid;
+                                    "
+                                ></div>
+                                <div
+                                    class="Ellipse8"
+                                    style="
+                                        width: 6px;
+                                        height: 6px;
+                                        left: 5px;
+                                        top: 5px;
+                                        position: absolute;
+                                        background: #fe98cb;
+                                        border-radius: 9999px;
+                                    "
+                                ></div>
+                            </div>
+                            <div class="Yellow" style="width: 25px; height: 25px; position: relative">
+                                <div
+                                    class="Ellipse9"
+                                    style="
+                                        width: 25px;
+                                        height: 25px;
+                                        left: 0px;
+                                        top: 0px;
+                                        position: absolute;
+                                        background: #fecb65;
+                                        border-radius: 9999px;
+                                        border: 2px black solid;
+                                    "
+                                ></div>
+                                <div
+                                    class="Ellipse10"
+                                    style="
+                                        width: 6px;
+                                        height: 6px;
+                                        left: 5px;
+                                        top: 5px;
+                                        position: absolute;
+                                        background: #fefecb;
+                                        border-radius: 9999px;
+                                    "
+                                ></div>
+                            </div>
+                            <div class="Green" style="width: 25px; height: 25px; position: relative">
+                                <div
+                                    class="Ellipse11"
+                                    style="
+                                        width: 25px;
+                                        height: 25px;
+                                        left: 0px;
+                                        top: 0px;
+                                        position: absolute;
+                                        background: #33cb65;
+                                        border-radius: 9999px;
+                                        border: 2px black solid;
+                                    "
+                                ></div>
+                                <div
+                                    class="Ellipse12"
+                                    style="
+                                        width: 6px;
+                                        height: 6px;
+                                        left: 5px;
+                                        top: 5px;
+                                        position: absolute;
+                                        background: #98fe00;
+                                        border-radius: 9999px;
+                                    "
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Photo" style="width: 218px; height: 207px; left: 50px; top: 114px; position: absolute">
+                        <div
+                            class="Rectangle20"
+                            style="
+                                width: 218px;
+                                height: 209px;
+                                left: 0px;
+                                top: 2px;
+                                position: absolute;
+                                background: white;
+                                border-bottom-left-radius: 32px;
+                                border: 1px black solid;
+                            "
+                        ></div>
+                        <img
+                            class="Rectangle21"
+                            style="
+                                width: 186px;
+                                height: 150px;
+                                left: 16px;
+                                top: 24px;
+                                position: absolute;
+                                border-radius: 12px;
+                                border: 3px black solid;
+                            "
+                            src=""
+                        />
+                        <div
+                            class="Ellipse2"
+                            style="
+                                width: 12px;
+                                height: 12px;
+                                left: 112px;
+                                top: 7px;
+                                position: absolute;
+                                background: #ff0b0e;
+                                border-radius: 9999px;
+                                border: 2px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Ellipse3"
+                            style="
+                                width: 12px;
+                                height: 12px;
+                                left: 93px;
+                                top: 7px;
+                                position: absolute;
+                                background: #ff0b0e;
+                                border-radius: 9999px;
+                                border: 2px black solid;
+                            "
+                        ></div>
+                        <div class="Red" style="width: 24px; height: 24px; left: 25px; top: 183px; position: absolute">
+                            <div
+                                class="Ellipse2"
+                                style="
+                                    width: 20px;
+                                    height: 20px;
+                                    left: -1px;
+                                    top: -2px;
+                                    position: absolute;
+                                    background: #ff0b0e;
+                                    border-radius: 9999px;
+                                    border: 3px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Ellipse8"
+                                style="
+                                    width: 5px;
+                                    height: 5px;
+                                    left: 5px;
+                                    top: 4px;
+                                    position: absolute;
+                                    background: #fe98cb;
+                                    border-radius: 9999px;
+                                "
+                            ></div>
+                        </div>
+                        <div
+                            class="HamburgerMenu"
+                            style="
+                                width: 26px;
+                                left: 166px;
+                                top: 185px;
+                                position: absolute;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                gap: 3px;
+                                display: inline-flex;
+                            "
+                        >
+                            <div class="Line1" style="width: 29px; height: 0px; border: 1.5px black solid"></div>
+                            <div class="Line2" style="width: 29px; height: 0px; border: 1.5px black solid"></div>
+                            <div class="Line3" style="width: 29px; height: 0px; border: 1.5px black solid"></div>
+                            <div class="Line4" style="width: 29px; height: 0px; border: 1.5px black solid"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="Frame12"
+                        style="
+                            left: 102px;
+                            top: 338px;
+                            position: absolute;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 12px;
+                            display: inline-flex;
+                        "
+                    >
+                        <div
+                            class="Rectangle1"
+                            style="
+                                width: 54px;
+                                height: 3px;
+                                background: #ff0000;
+                                border-radius: 4px;
+                                border: 2px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Rectangle2"
+                            style="
+                                width: 54px;
+                                height: 3px;
+                                background: #85bdff;
+                                border-radius: 4px;
+                                border: 2px black solid;
+                            "
+                        ></div>
+                    </div>
+                    <div
+                        id="play-cry"
+                        style="
+                            width: 45px;
+                            height: 45px;
+                            left: 17px;
+                            top: 345px;
+                            position: absolute;
+                            background: #585858;
+                            border-radius: 9999px;
+                            border: 3px black solid;
+                        "
+                    ></div>
+                    <div
+                        class="Bulbasaur"
+                        style="
+                            width: 128px;
+                            height: 48px;
+                            left: 104px;
+                            top: 413px;
+                            position: absolute;
+                            background: #3bb47d;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            border: 3px black solid;
+                        "
+                    >
+                        <div
+                            id="dex-name"
+                            style="
+                                width: 127px;
+                                height: 12px;
+                                top: 18px;
+                                position: absolute;
+                                color: black;
+                                font-size: 12px;
+                                font-family: Press Start 2P;
+                                font-weight: 400;
+                                word-wrap: break-word;
+                                text-align: center;
+                            "
+                        >
+                            ?
+                        </div>
+                    </div>
+                    <div class="Joycon" style="width: 81px; height: 82px; left: 227px; top: 345px; position: absolute">
+                        <div
+                            class="Frame1"
+                            style="
+                                width: 19px;
+                                height: 32px;
+                                left: 30px;
+                                top: 0px;
+                                position: absolute;
+                                background: #585858;
+                                border-top-left-radius: 6px;
+                                border-top-right-radius: 6px;
+                                border-left: 2px black solid;
+                                border-top: 2px black solid;
+                                border-right: 2px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Frame2"
+                            style="
+                                width: 19px;
+                                height: 32px;
+                                left: 9px;
+                                top: 44px;
+                                position: absolute;
+                                transform: rotate(-90deg);
+                                transform-origin: 0 0;
+                                background: #585858;
+                                border-top-left-radius: 6px;
+                                border-top-right-radius: 6px;
+                                border-left: 2px black solid;
+                                border-top: 2px black solid;
+                                border-right: 2px black solid;
+                                z-index: 1;
+                            "
+                        ></div>
+                        <div
+                            class="Frame3"
+                            style="
+                                width: 19px;
+                                height: 32px;
+                                left: 53px;
+                                top: 67px;
+                                position: absolute;
+                                transform: rotate(-180deg);
+                                transform-origin: 0 0;
+                                background: #585858;
+                                border-top-left-radius: 6px;
+                                border-top-right-radius: 6px;
+                                border-left: 2px black solid;
+                                border-top: 2px black solid;
+                                border-right: 2px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Frame4"
+                            style="
+                                width: 19px;
+                                height: 32px;
+                                left: 75px;
+                                top: 22px;
+                                position: absolute;
+                                transform: rotate(90deg);
+                                transform-origin: 0 0;
+                                background: #585858;
+                                border-top-left-radius: 6px;
+                                border-top-right-radius: 6px;
+                                border-left: 2px black solid;
+                                border-top: 2px black solid;
+                                border-right: 2px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Frame5"
+                            style="
+                                width: 17px;
+                                height: 18px;
+                                left: 32px;
+                                top: 32px;
+                                position: absolute;
+                                background: #585858;
+                            "
+                        >
+                            <div
+                                class="Ellipse13"
+                                style="
+                                    width: 14px;
+                                    height: 14px;
+                                    left: 0.5px;
+                                    top: -8.5px;
+                                    position: absolute;
+                                    border-radius: 9999px;
+                                    border: 2px black solid;
+                                    z-index: 2;
+                                "
+                            ></div>
+                            <div
+                                class="background-fix"
+                                style="
+                                    width: 17px;
+                                    height: 28px;
+                                    left: 0px;
+                                    top: -11px;
+                                    position: absolute;
+                                    /* border-radius: 9999px; */
+                                    border: 1px #585858 solid;
+                                    background: #585858;
+                                    z-index: 1;
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="Red" style="width: 15px; height: 15px; left: 248px; top: 461px; position: absolute">
+                        <div
+                            class="Ellipse2"
+                            style="
+                                width: 15px;
+                                height: 15px;
+                                left: -7px;
+                                top: 0;
+                                position: absolute;
+                                background: #ff0b0e;
+                                border-radius: 9999px;
+                                border: 2px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Ellipse8"
+                            style="
+                                width: 3px;
+                                height: 3px;
+                                left: -2px;
+                                top: 6px;
+                                position: absolute;
+                                background: #fe98cb;
+                                border-radius: 9999px;
+                            "
+                        ></div>
+                    </div>
+                    <div
+                        class="Frame13"
+                        style="
+                            left: 268px;
+                            top: 469px;
+                            position: absolute;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 6px;
+                            display: inline-flex;
+                        "
+                    >
+                        <div
+                            class="Ellipse14"
+                            style="width: 6px; height: 6px; background: black; border-radius: 9999px"
+                        ></div>
+                        <div
+                            class="Ellipse15"
+                            style="width: 6px; height: 6px; background: black; border-radius: 9999px"
+                        ></div>
+                        <div
+                            class="Ellipse16"
+                            style="width: 6px; height: 6px; background: black; border-radius: 9999px"
+                        ></div>
+                    </div>
+                    <div
+                        class="Frame14"
+                        style="
+                            left: 24px;
+                            top: 443px;
+                            position: absolute;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 30px;
+                            display: inline-flex;
+                        "
+                    >
+                        <div
+                            class="Ellipse17"
+                            style="width: 6px; height: 6px; background: black; border-radius: 9999px"
+                        ></div>
+                        <div
+                            class="Ellipse18"
+                            style="width: 6px; height: 6px; background: black; border-radius: 9999px"
+                        ></div>
+                    </div>
+                </div>
+                <div
+                    class="BackgroundRight"
+                    style="width: 325px; height: 491px; left: 322px; top: 0px; position: absolute"
+                >
+                    <div
+                        class="Rectangle13"
+                        style="
+                            width: 325px;
+                            height: 385px;
+                            left: 0px;
+                            top: 103px;
+                            position: absolute;
+                            background: #fe0165;
+                            border-bottom-right-radius: 12px;
+                            border: 3px black solid;
+                        "
+                    ></div>
+
+                    <div
+                        class="Line5"
+                        style="
+                            width: 55.2px;
+                            height: 0px;
+                            left: 153.6px;
+                            top: 56.099999999999994px;
+                            position: absolute;
+                            transform: rotate(54.97deg);
+                            transform-origin: 0 0;
+                            border: 2px black solid;
+                            z-index: 99;
+                        "
+                    ></div>
+                    <div
+                        class="Rectangle18"
+                        style="
+                            width: 150px;
+                            height: 55px;
+                            left: 0px;
+                            top: 56px;
+                            position: absolute;
+                            background: #fe0165;
+                            border-left: 3px solid black;
+                            border-top: 3px solid black;
+                        "
+                    ></div>
+                    <div
+                        class="Rectangle19"
+                        style="
+                            width: 71.51px;
+                            height: 55px;
+                            left: 151.04px;
+                            top: 59px;
+                            position: absolute;
+                            transform: rotate(54.97deg);
+                            transform-origin: 0 0;
+                            background: #fe0165;
+                        "
+                    ></div>
+                    <div
+                        class="Frame15"
+                        style="
+                            left: 39px;
+                            top: 419px;
+                            position: absolute;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 38px;
+                            display: inline-flex;
+                        "
+                    >
+                        <div
+                            class="Grass"
+                            style="
+                                width: 105px;
+                                height: 38px;
+                                position: relative;
+                                background: #9e9d9d;
+                                border-radius: 6px;
+                                overflow: hidden;
+                                border: 3px black solid;
+                            "
+                        >
+                            <div
+                                id="type"
+                                style="
+                                    width: 106px;
+                                    top: 7px;
+                                    text-align: center;
+                                    height: 12px;
+                                    height: 40px;
+                                    position: absolute;
+                                    color: black;
+                                    font-size: 12px;
+                                    font-family: Press Start 2P;
+                                    font-weight: 400;
+                                    word-wrap: break-word;
+                                "
+                            ></div>
+                        </div>
+                        <div
+                            class="1"
+                            style="
+                                width: 105px;
+                                height: 38px;
+                                position: relative;
+                                background: #9e9d9d;
+                                border-radius: 6px;
+                                overflow: hidden;
+                                border: 3px black solid;
+                            "
+                        >
+                            <div
+                                id="dex-id"
+                                style="
+                                    width: 104px;
+                                    text-align: center;
+                                    height: 12px;
+                                    /* left: 40px; */
+                                    top: 13px;
+                                    position: absolute;
+                                    color: black;
+                                    font-size: 12px;
+                                    font-family: Press Start 2P;
+                                    font-weight: 400;
+                                    word-wrap: break-word;
+                                "
+                            >
+                                #
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="Frame16"
+                        style="
+                            left: 39px;
+                            top: 351px;
+                            position: absolute;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            display: inline-flex;
+                        "
+                    >
+                        <div
+                            class="Rectangle3"
+                            style="
+                                width: 38px;
+                                height: 38px;
+                                background: white;
+                                box-shadow: -2px -2px 2px 2px #808080 inset;
+                                border-radius: 6px;
+                                border: 3px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Rectangle5"
+                            style="
+                                width: 38px;
+                                height: 38px;
+                                background: white;
+                                box-shadow: -2px -2px 2px 2px #808080 inset;
+                                border-radius: 6px;
+                                border: 3px black solid;
+                            "
+                        ></div>
+                    </div>
+                    <div
+                        class="Frame17"
+                        style="
+                            left: 41px;
+                            top: 311px;
+                            position: absolute;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 10px;
+                            display: inline-flex;
+                        "
+                    >
+                        <div class="Red" style="width: 15px; height: 15px; position: relative">
+                            <div
+                                class="Ellipse2"
+                                style="
+                                    width: 15px;
+                                    height: 15px;
+                                    left: 0px;
+                                    top: 0px;
+                                    position: absolute;
+                                    background: #ff0b0e;
+                                    border-radius: 9999px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Ellipse8"
+                                style="
+                                    width: 3px;
+                                    height: 3px;
+                                    left: 4px;
+                                    top: 4px;
+                                    position: absolute;
+                                    background: #fe98cb;
+                                    border-radius: 9999px;
+                                "
+                            ></div>
+                        </div>
+                        <div class="Red" style="width: 15px; height: 15px; position: relative">
+                            <div
+                                class="Ellipse2"
+                                style="
+                                    width: 15px;
+                                    height: 15px;
+                                    left: 0px;
+                                    top: 0px;
+                                    position: absolute;
+                                    background: #ff0b0e;
+                                    border-radius: 9999px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Ellipse8"
+                                style="
+                                    width: 3px;
+                                    height: 3px;
+                                    left: 4px;
+                                    top: 4px;
+                                    position: absolute;
+                                    background: #fe98cb;
+                                    border-radius: 9999px;
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="Yellow" style="width: 42px; height: 42px; left: 245px; top: 352px; position: absolute">
+                        <div
+                            class="Ellipse9"
+                            style="
+                                width: 38px;
+                                height: 38px;
+                                left: 0px;
+                                top: 0px;
+                                position: absolute;
+                                background: #fecb65;
+                                border-radius: 9999px;
+                                border: 3px black solid;
+                            "
+                        ></div>
+                        <div
+                            class="Ellipse10"
+                            style="
+                                width: 10px;
+                                height: 10px;
+                                left: 8px;
+                                top: 8px;
+                                position: absolute;
+                                background: #fefecb;
+                                border-radius: 9999px;
+                            "
+                        ></div>
+                    </div>
+                    <div
+                        class="Frame18"
+                        style="
+                            left: 164px;
+                            top: 314px;
+                            position: absolute;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 14px;
+                            display: inline-flex;
+                        "
+                    >
+                        <div
+                            class="Rectangle7"
+                            style="width: 57px; height: 3px; background: #585858; border: 3px black solid"
+                        ></div>
+                        <div
+                            class="Rectangle6"
+                            style="width: 57px; height: 3px; background: #585858; border: 3px black solid"
+                        ></div>
+                    </div>
+                    <div
+                        class="1"
+                        style="
+                            width: 228px;
+                            height: 102px;
+                            left: 50px;
+                            top: 109px;
+                            position: absolute;
+                            background: #9e9d9d;
+                            border-radius: 6px;
+                            overflow: hidden;
+                            border: 3px black solid;
+                        "
+                    >
+                        <div
+                            class="Frame9"
+                            style="
+                                height: 36px;
+                                left: 17px;
+                                top: 33px;
+                                position: absolute;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                gap: 12px;
+                                display: inline-flex;
+                            "
+                        >
+                            <div
+                                id="height"
+                                style="
+                                    width: 192px;
+                                    height: 12px;
+                                    color: black;
+                                    font-size: 12px;
+                                    font-family: Press Start 2P;
+                                    font-weight: 400;
+                                    word-wrap: break-word;
+                                "
+                            >
+                                Height: ?cm
+                            </div>
+                            <div
+                                id="weight"
+                                style="
+                                    width: 192px;
+                                    height: 12px;
+                                    color: black;
+                                    font-size: 12px;
+                                    font-family: Press Start 2P;
+                                    font-weight: 400;
+                                    word-wrap: break-word;
+                                "
+                            >
+                                Weight: ?kg
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="Frame8"
+                        style="
+                            left: 59px;
+                            top: 221px;
+                            position: absolute;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            display: inline-flex;
+                        "
+                    >
+                        <div
+                            class="Frame6"
+                            style="justify-content: flex-start; align-items: flex-start; display: inline-flex"
+                        >
+                            <div
+                                class="Rectangle8"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Rectangle9"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Rectangle10"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Rectangle11"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Rectangle12"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                        </div>
+                        <div
+                            class="Frame7"
+                            style="justify-content: flex-start; align-items: flex-start; display: inline-flex"
+                        >
+                            <div
+                                class="Rectangle8"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Rectangle9"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Rectangle10"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Rectangle11"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                            <div
+                                class="Rectangle12"
+                                style="
+                                    width: 38px;
+                                    height: 38px;
+                                    background: #7ba9f7;
+                                    box-shadow: -2px -2px 1px 2px #3298cb inset;
+                                    border-radius: 3px;
+                                    border: 2px black solid;
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>

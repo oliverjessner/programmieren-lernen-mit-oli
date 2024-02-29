@@ -1,0 +1,23 @@
+abstract class Human {
+    name: String 
+    age: Int(isBetween(18, 99))
+}
+
+open class Programmer extends Human {
+    job: String = "Programmer"
+    local emoji = "🌝" /* private */
+    fixed desc = "\(name) is \(age) year old and works as a \(job) \(emoji)"
+    age: Int(isBetween(22, 65))
+}
+
+class CTO extends Programmer {
+    job: String = "CTO"
+    age: Int(isBetween(30, 60))
+    hidden salary: Int = 1_000_000
+    descLen = desc.contains("Oliver")
+}
+
+oliver = new CTO {
+    name = "Oliver"
+    age = 33
+}
