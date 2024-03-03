@@ -1,3 +1,4 @@
+/* Chapter: Alles zusammenfügen  */
 const picture = document.querySelector('img');
 const dexName = document.querySelector('#dex-name');
 const type = document.querySelector('#type');
@@ -8,6 +9,7 @@ const audioCry = document.querySelector('#audio-cry');
 const audioDesc = document.querySelector('#audio-desc');
 const playCry = document.querySelector('#play-cry');
 const button = document.querySelector('#upload');
+const yellowButton = document.querySelector('#yellow-button');
 
 async function playAudio() {}
 

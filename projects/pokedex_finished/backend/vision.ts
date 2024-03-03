@@ -1,4 +1,4 @@
-import OpenAI from 'openai/index.mjs';
+import OpenAI from 'openai';
 
 const openai = new OpenAI();
 

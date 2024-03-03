@@ -2,28 +2,37 @@ import setData from './setData.js';
 
 const file = document.querySelector('input');
 const button = document.querySelector('#upload');
+const smallTopRed = document.querySelector('#small-top-red');
+const smallTopBlue = document.querySelector('#small-top-blue');
+const smallTopGreen = document.querySelector('#small-top-green');
 
 file.addEventListener('change', handleSubmit);
 button.addEventListener('click', () => file.click());
 
+function flashStart() {
+    smallTopRed.style.animation = '0.5s infinite small-blink';
+    smallTopBlue.style.animation = '0.8s infinite small-blink';
+    smallTopGreen.style.animation = '1s infinite small-blink';
+}
+
+function flashStop() {
+    smallTopRed.style.animation = 'none';
+    smallTopBlue.style.animation = 'none';
+    smallTopGreen.style.animation = 'none';
+}
+
 function handleSubmit({ target }) {
     const [file] = target.files;
     const reader = new FileReader();
-    const imgTag = document.createElement('img');
-    const url = URL.createObjectURL(file);
 
+    flashStart();
     reader.onload = function (evt) {
-        imgTag.src = url;
-
-        imgTag.onload = function () {
-            const img = {
-                name: file.name,
-                base64: evt.target.result,
-            };
-
-            URL.revokeObjectURL(url);
-            sendImage(img);
+        const img = {
+            name: file.name,
+            base64: evt.target.result,
         };
+
+        sendImage(img);
     };
 
     reader.readAsDataURL(file);
@@ -31,9 +40,9 @@ function handleSubmit({ target }) {
 
 function getFormDataForImage(postData) {
     const formData = new FormData();
+
     formData.append('file', postData.base64);
     formData.append('name', postData.name);
-    formData.append('type', 'image');
 
     return formData;
 }
@@ -45,6 +54,6 @@ async function sendImage(imgData) {
     });
     const json = await respone.json();
 
-    console.log(json);
-    return setData(json);
+    flashStop();
+    await setData(json);
 }

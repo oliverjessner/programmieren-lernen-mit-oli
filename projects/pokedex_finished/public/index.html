@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.6" />
         <title>AI Pokedex</title>
-        <link rel="stylesheet" href="input.css" />
+        <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="https://oliverjessner.at/assets/images/favicon/favicon.png" />
     </head>
     <body>
+        <!-- Von uns hinzugefügt -->
         <input id="file" name="file" type="file" accept="image/gif,image/jpeg,image/jpg,image/webp,image/png" />
         <audio id="audio-desc"></audio>
         <audio id="audio-cry"></audio>
@@ -219,7 +220,7 @@
                             ></div>
                             <div
                                 id="upload"
-                                class="Ellipse6"
+                                class="upload-button"
                                 style="
                                     width: 76px;
                                     height: 76px;
@@ -258,7 +259,7 @@
                         >
                             <div class="Red" style="width: 25px; height: 25px; position: relative">
                                 <div
-                                    class="Ellipse2"
+                                    id="small-top-red"
                                     style="
                                         width: 25px;
                                         height: 25px;
@@ -285,7 +286,7 @@
                             </div>
                             <div class="Yellow" style="width: 25px; height: 25px; position: relative">
                                 <div
-                                    class="Ellipse9"
+                                    id="small-top-blue"
                                     style="
                                         width: 25px;
                                         height: 25px;
@@ -312,7 +313,7 @@
                             </div>
                             <div class="Green" style="width: 25px; height: 25px; position: relative">
                                 <div
-                                    class="Ellipse11"
+                                    id="small-top-green"
                                     style="
                                         width: 25px;
                                         height: 25px;
@@ -937,7 +938,7 @@
                     </div>
                     <div class="Yellow" style="width: 42px; height: 42px; left: 245px; top: 352px; position: absolute">
                         <div
-                            class="Ellipse9"
+                            id="yellow-button"
                             style="
                                 width: 38px;
                                 height: 38px;

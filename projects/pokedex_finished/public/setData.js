@@ -8,18 +8,22 @@ const audioCry = document.querySelector('#audio-cry');
 const audioDesc = document.querySelector('#audio-desc');
 const playCry = document.querySelector('#play-cry');
 const button = document.querySelector('#upload');
+const yellowButton = document.querySelector('#yellow-button');
 
 playCry.addEventListener('click', () => audioCry.play());
+yellowButton.addEventListener('click', () => playAudio());
 
 async function playAudio() {
     button.style.animation = 'blink 1s infinite';
 
-    const done = await new Promise(res => {
-        audioDesc.play();
-        audioDesc.onended = res;
-    });
-
-    button.style.animation = 'none';
+    try {
+        const done = await new Promise(res => {
+            audioDesc.play();
+            audioDesc.onended = res;
+        });
+    } finally {
+        button.style.animation = 'none';
+    }
 }
 
 export default async function setData({ data, voice }) {
