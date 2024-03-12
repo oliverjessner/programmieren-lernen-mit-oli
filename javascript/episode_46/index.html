@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Episode 46: Clipboard API</title>
+        <link rel="icon" href="https://oliverjessner.at/assets/images/favicon/favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <button id="sanitized">Load Paste sanitized</button>
+                <button id="unsanitized">Load Paste unsanitized</button>
+                <button id="write">Write to Clipboard</button>
+            </div>
+            <div>
+                <textarea title="copypaste" rows="10" cols="40"></textarea>
+                <img height="165" width="165" />
+            </div>
+        </div>
+
+        <script type="module" src="logic.js"></script>
+    </body>
+</html>
