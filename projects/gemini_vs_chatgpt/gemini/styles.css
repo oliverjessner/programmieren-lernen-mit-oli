@@ -1,0 +1,12 @@
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 306px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    text-align: center;
+}
