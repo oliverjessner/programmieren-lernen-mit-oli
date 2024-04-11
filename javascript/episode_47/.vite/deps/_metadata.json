@@ -1,0 +1,15 @@
+{
+  "hash": "46526893",
+  "configHash": "087e7145",
+  "lockfileHash": "2b15253e",
+  "browserHash": "bc148b39",
+  "optimized": {
+    "type-is": {
+      "src": "../../node_modules/type-is/index.js",
+      "file": "type-is.js",
+      "fileHash": "5f7abd16",
+      "needsInterop": true
+    }
+  },
+  "chunks": {}
+}
