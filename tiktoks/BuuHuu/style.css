@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.buuhuu {
+    width: 160px;
+    height: 160px;
+}
+
+.pixel {
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+
+.buuhuu .black {
+    background-color: #000;
+}
+.buuhuu .grey {
+    background-color: #eee;
+}
+.buuhuu .red {
+    background-color: #ff1e28;
+}
