@@ -1,6 +1,4 @@
 function concat(first) {
-    // complex
-
     return function inner(second) {
         return `${first} ${second}`;
     };
