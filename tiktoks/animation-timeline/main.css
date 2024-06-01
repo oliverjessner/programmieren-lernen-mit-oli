@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+img {
+    border-radius: 10px;
+    height: 600px;
+    width: 450px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+img:nth-child(even) {
+    float: right;
+    margin-right: -15px;
+    margin-left: 209px;
+}
+
+img:nth-child(odd) {
+    float: left;
+    margin-right: 209px;
+    margin-left: -15px;
+}
+
+img:last-child {
+    margin-bottom: 300px;
+}
