@@ -1,0 +1,43 @@
+.anchor {
+    anchor-name: --anchor-el;
+}
+
+.anchored-notice {
+    position: absolute;
+    position-anchor: --anchor-el;
+    bottom: anchor(top);
+    right: anchor(right);
+}
+
+.anchor {
+    background: linear-gradient(45deg, blueviolet, blue);
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    width: 3.5rem;
+    line-height: 0;
+    margin-top: 60dvh;
+
+    p {
+        filter: brightness(2);
+    }
+}
+
+.anchored-notice {
+    font-family: system-ui, sans-serif;
+    background: #333;
+    border-radius: 0.75rem;
+    color: white;
+    padding: 1rem;
+    max-width: 250px;
+    line-height: 1.5;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    height: 100vh;
+}

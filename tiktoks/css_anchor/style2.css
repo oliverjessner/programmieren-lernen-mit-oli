@@ -1,0 +1,38 @@
+.one,
+.two {
+    position: absolute;
+    padding: 1rem;
+    border: 2px solid;
+    background: gold;
+}
+
+.one {
+    anchor-name: --one;
+}
+
+.two {
+    anchor-name: --two;
+    bottom: 0;
+    right: 0;
+}
+
+.anchored {
+    position: absolute;
+    top: anchor(--one bottom);
+    left: anchor(--one right);
+    right: anchor(--two left);
+    bottom: anchor(--two top);
+    display: grid;
+    place-items: center;
+}
+
+body {
+    height: 100dvh;
+    font-family: system-ui;
+    font-size: 18px;
+    margin: 0;
+}
+
+.anchored {
+    background: skyblue;
+}

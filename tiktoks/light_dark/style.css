@@ -1,0 +1,26 @@
+html {
+    color-scheme: light dark;
+}
+
+.target {
+    background-color: light-dark(black, grey);
+}
+
+.target {
+    width: 400px;
+    height: 400px;
+    color: white;
+}
+h1 {
+    text-align: center;
+    line-height: 400px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
