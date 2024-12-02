@@ -1,0 +1,4 @@
+1. There are version of your code base
+2. At one point, a version breaks the code
+3. Find the first bad version
+4. example: [true, true, true, false, false]
